@@ -1,0 +1,18 @@
+Not Found
+#########
+
+:date: 2017-11-03 20:45
+:modified: 2017-11-03 20:45
+:status: hidden
+:save_as: 404.html
+
+Oops!
+_____
+
+.. raw:: html
+
+  <i class="fa fa-frown-o fa-5x" aria-hidden="true"></i>
+
+La page demandée n'a pas pu être trouvée. Peut-être voulez-vous vous visualiser les `Archives <https://blog.devarieux.net/archives.html>`_?
+
+
