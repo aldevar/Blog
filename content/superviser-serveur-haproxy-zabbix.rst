@@ -2,7 +2,7 @@ Superviser un serveur HAproxy avec Zabbix
 #########################################
 :date: 2016-08-01 08:30
 :author: alain
-:category: Tech
+:category: Supervision
 :slug: superviser-serveur-haproxy-zabbix
 :status: published
 

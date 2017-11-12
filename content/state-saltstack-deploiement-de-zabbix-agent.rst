@@ -2,7 +2,7 @@ State SaltStack pour déploiement de Zabbix-agent
 ################################################
 :date: 2016-08-10 15:36
 :author: alain
-:category: Tech
+:category: Supervision
 :tags: automation, yaml, zabbix-agent
 :slug: state-saltstack-deploiement-de-zabbix-agent
 :status: published
