@@ -22,8 +22,8 @@ Il y a 3 catégories de métriques. Les métriques systèmes, les métriques app
 Les Métriques Systèmes
 ----------------------
 
-Ce sont les métriques liées à l'infrastructure servant la partie applicative. Cette infrastrcuture est composée de différentes ressources qui peuvent être de bas niveau comme le materiel physique (CPU, RAM, Disques, Réseau) ou de plus haut niveau comme une base de données qui peut aussi être considéré comme une ressource afin qu'une application puisse fournir des résultats. C'est la notion de middleware. Ces métriques peuvent être classée en 3 grandes catégories : 
-- **Taux de disponiblité**: Purcentage de temps durant lequel la ressource est capable de répondre à des requêtes.
+Ce sont les métriques liées à l'infrastructure servant la partie applicative. Cette infrastrcuture est composée de différentes ressources qui peuvent être de bas niveau comme le materiel physique (CPU, RAM, Disques, Réseau) ou de plus haut niveau comme une base de données qui peut aussi être considéré comme une ressource afin qu'une application puisse fournir des résultats. C'est la notion de middleware. Ces métriques peuvent être classées en 3 grandes catégories : 
+- **Taux de disponiblité**: Pourcentage de temps durant lequel la ressource est capable de répondre à des requêtes.
 - **Taux d'utilisation**: Pourcentage de temps durant lequel la ressource est occupée à répondre à des requêtes. 
 - **Contention**: C'est la quantité de requêtes que la ressource ne peut servir car elle est occupée. Cela peut être une file d'attente, des I/O Wait...
 
@@ -42,3 +42,4 @@ Mémoire Vive     N/A                % de la RAM totale      Utilisation du swap
 Les Métriques Applicatives
 --------------------------
 
+C'est ici qu'est mesurée l'experience utilisateur ainsi que la santé global du service. 
