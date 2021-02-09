@@ -1,0 +1,9 @@
+<footer id="site-info">
+    <nav>
+    <ul id="nav-services" class="centered-nav"><li>
+        {% for title, url in SOCIAL %}
+            </li><a href="{{ url }}" target="{{title}}"><i class="icon-{{ title }} svc-badge"></i></a>
+        {% endfor %}
+    </li></ul>
+</nav>
+</footer>

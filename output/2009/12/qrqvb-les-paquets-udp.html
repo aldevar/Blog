@@ -1,69 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="fr">
 
-<html lang="en">
 <head>
-<!-- Required meta tags always come first -->
-<meta charset="utf-8"/>
-<meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<title>QRQVB : Les paquets UDP | Aldevar - Le Blog
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>  QRQVB : Les paquets UDP | Aldevar - Le Blog
 </title>
-<link href="/2009/12/qrqvb-les-paquets-udp.html" rel="canonical"/>
-<link href="/feed/atom.xml" rel="alternate" title="Full Atom Feed" type="application/atom+xml"/>
-<link href="/theme/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="/theme/css/font-awesome.min.css" rel="stylesheet"/>
-<link href="/theme/css/pygments/default.min.css" rel="stylesheet"/>
-<link href="/theme/css/style.css" rel="stylesheet"/>
-<meta content="Suite de la Question Réseau Qui Va Bien, nouveau billet purement réseau donc. Je comptais me lancer dans la description des paquets TCP, mais je pense qu’il est plus intéressant de se pencher d’abord sur UDP avant d’appréhender TCP. UDP (Pour User Datagram Protocol) se situe dans …" name="description"/>
+  <link rel="canonical" href="../../2009/12/qrqvb-les-paquets-udp.html">
+
+
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.css">
+  <link rel="stylesheet" href="../../theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="../../theme/css/theme.css">
+
+  <link rel="alternate" type="application/atom+xml" title="Full Atom Feed"
+        href="/feeds/all.atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Categories Atom Feed"
+        href="/feeds/{slug}.atom.xml">  
+  <meta name="description" content="Suite de la Question Réseau Qui Va Bien, nouveau billet purement réseau donc. Je comptais me lancer dans la description des paquets TCP, mais je pense qu’il est plus intéressant de se pencher d’abord sur UDP avant d’appréhender TCP. UDP (Pour User Datagram Protocol) se situe dans …">
+
+
 </head>
+
 <body>
-<header class="header">
-<div class="container">
+  <header class="header">
+    <div class="container">
 <div class="row">
-<div class="col-sm-4">
-<a href="/">
-<img alt="Aldevar - Le Blog" class="img-fluid" height="100" src="/images/avat180.png" width="100"/>
-</a>
-</div>
-<div class="col-sm-8">
-<h1 class="title"><a href="/">Aldevar - Le Blog</a></h1>
-<p class="text-muted">Un blog IT</p>
-<ul class="list-inline">
-<li class="list-inline-item"><a href="/pages/about.html">About</a></li>
-<li class=" list-inline-item text-muted">|</li>
-<li class="list-inline-item"><a class="fa fa-twitter" href="https://twitter.com/landvarx" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/alain-devarieux" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-github" href="https://github.com/aldevar" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-meetup" href="https://www.meetup.com/fr-FR/Rennes-Monitoring/" target="_blank"></a></li>
-</ul>
-</div>
-</div>
-</div>
-</header>
-<div class="main">
-<div class="container">
-<h1>QRQVB : Les paquets UDP
+    <div class="col-sm-4">
+      <a href="../../">
+        <img class="img-fluid rounded" src=../../images/avat180.png width=100 height=100 alt="Aldevar - Le Blog">
+      </a>
+    </div>
+  <div class="col-sm-8">
+    <h1 class="title"><a href="../../">Aldevar - Le Blog</a></h1>
+      <p class="text-muted">Yet Another Blog</p>
+      <ul class="list-inline">
+            <li class="list-inline-item"><a href="../../pages/about.html">About</a></li>
+            <li class=" list-inline-item text-muted">|</li>
+          <li class="list-inline-item"><a class="fa fa-github" href="https://github.com/aldevar" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-twitter" href="https://twitter.com/landvarx" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/alain-devarieux" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-rss" href="../../feeds/all.atom.xml" target="_blank"></a></li>
+      </ul>
+  </div>
+</div>    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>  QRQVB : Les paquets UDP
 </h1>
-<hr/>
-<article class="article">
-<header>
-<ul class="list-inline">
-<li class="list-inline-item text-muted" title="2009-12-29T11:23:00+01:00">
-<i class="fa fa-clock-o"></i>
-        mar. 29 décembre 2009
-      </li>
-<li class="list-inline-item">
-<i class="fa fa-folder-open-o"></i>
-<a href="/category/qrqvb.html">QRQVB</a>
-</li>
-<li>
-<i class="fa fa-book"></i>
-	3.0 min read
-      </li>
-</ul>
-</header>
-<div class="content">
-<p>Suite de la Question Réseau Qui Va Bien, nouveau billet purement réseau
+      <hr>
+  <article class="article">
+    <header>
+      <ul class="list-inline">
+        <li class="list-inline-item text-muted" title="2009-12-29T11:23:00+01:00">
+          <i class="fa fa-clock-o"></i>
+          Tue 29 December 2009
+        </li>
+        <li class="list-inline-item">
+          <i class="fa fa-folder-open-o"></i>
+          <a href="../../category/qrqvb.html">QRQVB</a>
+        </li>
+      </ul>
+    </header>
+    <div class="content">
+      <p>Suite de la Question Réseau Qui Va Bien, nouveau billet purement réseau
 donc. Je comptais me lancer dans la description des paquets TCP, mais je
 pense qu’il est plus intéressant de se pencher d’abord sur UDP avant
 d’appréhender TCP.</p>
@@ -79,14 +84,14 @@ différents services pour lesquels ces paquets peuvent être destinés. Que
 ce soit pour une connexion SSH (port 22) ou HTTP (port 80) ou autre, les
 datagrammes IP sont tous indifféremment mélangés.</p>
 <p>La couche 4 du modèle OSI ajoute un mécanisme qui permet
-l’identification du service  concerné. Plusieurs programmes de plusieurs
+l’identification du service &nbsp;concerné. Plusieurs programmes de plusieurs
 utilisateurs pouvant simultanément circuler sur le réseau, il est
 indispensable de faire un tri entre les applications. Ici, l’idée est
 d’associer la destination du paquet à une fonction. L’identification de
 cette fonction ce fait à l’aide d’un chiffre nommé <strong>Port</strong>.</p>
 <div class="section" id="en-tete-udp">
 <h2>En tête UDP</h2>
-<p><a class="reference external" href="/images/encaps.png"><img alt="encaps" src="/images/encaps.png"/></a></p>
+<p><a class="reference external" href="/images/encaps.png"><img alt="encaps" src="/images/encaps.png" /></a></p>
 <p>Lors de l’étude des <a class="reference external" href="qrqvb-datagramme-ip.html">datagramme
 IP</a>, nous
 avions vu le contenu de l’entête du paquet (partie verte). Ici, nous
@@ -94,7 +99,7 @@ allons observer le contenu de l’entête du message (partie jaune) lorsque
 l’on traite un p&gt;aquet UDP.</p>
 <p>Le paquet UDP est composé de 8 octets.</p>
 <blockquote>
-<a class="reference external" href="/images/entete.png"><img alt="entete" src="/images/entete.png"/></a></blockquote>
+<a class="reference external" href="/images/entete.png"><img alt="entete" src="/images/entete.png" /></a></blockquote>
 <p><strong>Les 2 premiers octets contiennent le port source</strong>. Codé sur 16 bits
 donc. C’est le numéro de port de l’émetteur du paquet. C’est aussi le
 numéro de port sur lequel le destinataire doit envoyer sa réponse.</p>
@@ -111,8 +116,8 @@ contrôle de l’entête UDP et des données qui suivent.</p>
 <div class="section" id="ports-reserves">
 <h2>Ports réservés</h2>
 <p>Toute machine qui utilise la pile TCP/IP se doit de connaitre un
-certains nombre de services bien connus, aussi appelé « well known port
-number » pour pouvoir dialoguer avec les autres machines sur internet.
+certains nombre de services bien connus, aussi appelé «&nbsp;well known port
+number&nbsp;» pour pouvoir dialoguer avec les autres machines sur internet.
 Sur une machines Unix, cette liste est placée dans le fichier
 <strong>*/etc/services*</strong> et se doit d’être lisible par tous les utilisateurs
 et toutes les applications. Voici un extrait du contenu de ce fichier :</p>
@@ -181,23 +186,27 @@ risque supplémentaire de perte de données.</p>
 <p>Nous verrons comment TCP peut palier à ce problème dans la prochaine
 QRQVB</p>
 </div>
-</div>
-</article>
-</div>
-</div>
-<footer class="footer">
-<div class="container">
+
+    </div>
+  </article>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
 <div class="row">
-<ul class="col-sm-6 list-inline">
-<li class="list-inline-item"><a href="/archives.html">Archives</a></li>
-<li class="list-inline-item"><a href="/categories.html">Categories</a></li>
-<li class="list-inline-item"><a href="/tags.html">Tags</a></li>
-</ul>
-<p class="col-sm-6 text-sm-right text-muted">
-          Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a> / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">✨</a>
-</p>
-</div>
-</div>
-</footer>
+  <ul class="col-sm-6 list-inline">
+    <li class="list-inline-item"><a href="../../archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="../../categories.html">Categories</a></li>
+      <li class="list-inline-item"><a href="../../tags.html">Tags</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
+    / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+  </p>
+</div>    </div>
+  </footer>
+
 </body>
+
 </html>

@@ -1,69 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="fr">
 
-<html lang="en">
 <head>
-<!-- Required meta tags always come first -->
-<meta charset="utf-8"/>
-<meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<title>GNS3 - Créer son premier Lab | Aldevar - Le Blog
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>  GNS3 - Créer son premier Lab | Aldevar - Le Blog
 </title>
-<link href="/2015/08/gns3-creer-son-premier-lab.html" rel="canonical"/>
-<link href="/feed/atom.xml" rel="alternate" title="Full Atom Feed" type="application/atom+xml"/>
-<link href="/theme/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="/theme/css/font-awesome.min.css" rel="stylesheet"/>
-<link href="/theme/css/pygments/default.min.css" rel="stylesheet"/>
-<link href="/theme/css/style.css" rel="stylesheet"/>
-<meta content="Premier Lancement Après avoir installé GNS3 et ses différents modules dans un précédent article, nous allons maintenant voir comment créer un Lab et faire un petit exercice simple de configuration de routes statiques. La première chose est d'ajouter un nouveau routeur dans la configuration de GNS3. Ici, ce sera un …" name="description"/>
+  <link rel="canonical" href="../../2015/08/gns3-creer-son-premier-lab.html">
+
+
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.css">
+  <link rel="stylesheet" href="../../theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="../../theme/css/theme.css">
+
+  <link rel="alternate" type="application/atom+xml" title="Full Atom Feed"
+        href="/feeds/all.atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Categories Atom Feed"
+        href="/feeds/{slug}.atom.xml">  
+  <meta name="description" content="Premier Lancement Après avoir installé GNS3 et ses différents modules dans un précédent article, nous allons maintenant voir comment créer un Lab et faire un petit exercice simple de configuration de routes statiques. La première chose est d'ajouter un nouveau routeur dans la configuration de GNS3. Ici, ce sera un …">
+
+
 </head>
+
 <body>
-<header class="header">
-<div class="container">
+  <header class="header">
+    <div class="container">
 <div class="row">
-<div class="col-sm-4">
-<a href="/">
-<img alt="Aldevar - Le Blog" class="img-fluid" height="100" src="/images/avat180.png" width="100"/>
-</a>
-</div>
-<div class="col-sm-8">
-<h1 class="title"><a href="/">Aldevar - Le Blog</a></h1>
-<p class="text-muted">Un blog IT</p>
-<ul class="list-inline">
-<li class="list-inline-item"><a href="/pages/about.html">About</a></li>
-<li class=" list-inline-item text-muted">|</li>
-<li class="list-inline-item"><a class="fa fa-twitter" href="https://twitter.com/landvarx" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/alain-devarieux" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-github" href="https://github.com/aldevar" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-meetup" href="https://www.meetup.com/fr-FR/Rennes-Monitoring/" target="_blank"></a></li>
-</ul>
-</div>
-</div>
-</div>
-</header>
-<div class="main">
-<div class="container">
-<h1>GNS3 - Créer son premier Lab
+    <div class="col-sm-4">
+      <a href="../../">
+        <img class="img-fluid rounded" src=../../images/avat180.png width=100 height=100 alt="Aldevar - Le Blog">
+      </a>
+    </div>
+  <div class="col-sm-8">
+    <h1 class="title"><a href="../../">Aldevar - Le Blog</a></h1>
+      <p class="text-muted">Yet Another Blog</p>
+      <ul class="list-inline">
+            <li class="list-inline-item"><a href="../../pages/about.html">About</a></li>
+            <li class=" list-inline-item text-muted">|</li>
+          <li class="list-inline-item"><a class="fa fa-github" href="https://github.com/aldevar" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-twitter" href="https://twitter.com/landvarx" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/alain-devarieux" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-rss" href="../../feeds/all.atom.xml" target="_blank"></a></li>
+      </ul>
+  </div>
+</div>    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>  GNS3 - Créer son premier Lab
 </h1>
-<hr/>
-<article class="article">
-<header>
-<ul class="list-inline">
-<li class="list-inline-item text-muted" title="2015-08-26T10:03:00+02:00">
-<i class="fa fa-clock-o"></i>
-        mer. 26 août 2015
-      </li>
-<li class="list-inline-item">
-<i class="fa fa-folder-open-o"></i>
-<a href="/category/reseaux-virtualisation.html">Réseaux, Virtualisation</a>
-</li>
-<li>
-<i class="fa fa-book"></i>
-	5.0 min read
-      </li>
-</ul>
-</header>
-<div class="content">
-<div class="section" id="premier-lancement">
+      <hr>
+  <article class="article">
+    <header>
+      <ul class="list-inline">
+        <li class="list-inline-item text-muted" title="2015-08-26T10:03:00+02:00">
+          <i class="fa fa-clock-o"></i>
+          Wed 26 August 2015
+        </li>
+        <li class="list-inline-item">
+          <i class="fa fa-folder-open-o"></i>
+          <a href="../../category/reseaux-virtualisation.html">Réseaux, Virtualisation</a>
+        </li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="section" id="premier-lancement">
 <h2>Premier Lancement</h2>
 <p>Après avoir installé GNS3 et ses différents modules dans <a class="reference external" href="http://images/2015/08/prise-en-main-de-gns3-pour-la-simulation-reseau/">un précédent
 article</a>,
@@ -76,26 +81,26 @@ pour ce modèle.</p>
 <p>Au premier lancement de GNS3, il vous est proposé de créer un projet, ce
 que nous allons faire tout de suite en enregistrant ce projet sous le
 nom FirstLab.</p>
-<p><a class="reference external" href="images/2015-08-25-21_47_47-Prise-en-main-de-GNS3-pour-la-simulation-réseau-À-La-Benne-Nightly.png"><img alt="2015-08-25-21_47_47-Prise_en_main_de_GNS3_pour_la_simulation_réseau" src="images/2015-08-25-21_47_47-Prise-en-main-de-GNS3-pour-la-simulation-réseau-À-La-Benne-Nightly.png"/></a> <a class="reference external" href="images/2015-08-25-21_48_59-New-project.png"><img alt="2015-08-25-21_48_59-New-project" src="images/2015-08-25-21_48_59-New-project.png"/></a>Une fois le
+<p><a class="reference external" href="images/2015-08-25-21_47_47-Prise-en-main-de-GNS3-pour-la-simulation-réseau-À-La-Benne-Nightly.png"><img alt="2015-08-25-21_47_47-Prise_en_main_de_GNS3_pour_la_simulation_réseau" src="images/2015-08-25-21_47_47-Prise-en-main-de-GNS3-pour-la-simulation-réseau-À-La-Benne-Nightly.png" /></a> <a class="reference external" href="images/2015-08-25-21_48_59-New-project.png"><img alt="2015-08-25-21_48_59-New-project" src="images/2015-08-25-21_48_59-New-project.png" /></a>Une fois le
 projet créé, on va ajouter un routeur dans la configuration de GNS3.
 Pour cela, on se rend dans Edit &gt; Preferences.</p>
-<p><a class="reference external" href="images/2015-08-25-21_51_11-Preferences.png"><img alt="2015-08-25-21_51_11-Preferences" src="images/2015-08-25-21_51_11-Preferences.png"/></a>Je vous laisse parcourir les
+<p><a class="reference external" href="images/2015-08-25-21_51_11-Preferences.png"><img alt="2015-08-25-21_51_11-Preferences" src="images/2015-08-25-21_51_11-Preferences.png" /></a>Je vous laisse parcourir les
 options afin que vous puissiez comprendre un peu mieux le logiciel. Si
 vous avez des VM VirtualBox, GNS3 les trouvera et vous les listera dans
 le menu VirtualBox</p>
-<p><a class="reference external" href="images/2015-08-25-22_00_01-Preferences.png"><img alt="2015-08-25-22_00_01-Preferences" src="images/2015-08-25-22_00_01-Preferences.png"/></a></p>
+<p><a class="reference external" href="images/2015-08-25-22_00_01-Preferences.png"><img alt="2015-08-25-22_00_01-Preferences" src="images/2015-08-25-22_00_01-Preferences.png" /></a></p>
 </div>
 <div class="section" id="ajout-d-un-routeur">
 <h2>Ajout d'un routeur</h2>
 <p>Pour ajouter un routeur Cisco, on se rend dans Dynamips &gt; IOS Router et
 on clique sur New. Il suffit ensuite de suivre les indications et de
 fournir l'image IOS du routeur qu'on souhaite voir apparaître.</p>
-<p><a class="reference external" href="images/2015-08-25-21_55_51-Preferences.png"><img alt="2015-08-25-21_55_51-Preferences" src="images/2015-08-25-21_55_51-Preferences.png"/></a> <a class="reference external" href="images/2015-08-25-21_56_47-New-IOS-router-template.png"><img alt="2015-08-25-21_56_47-New IOS router template" src="images/2015-08-25-21_56_47-New-IOS-router-template.png"/></a> <a class="reference external" href="images/2015-08-25-21_57_08-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"><img alt="2015-08-25-21_57_08-New IOS router - c2691-jk9s-mz.123-17.image" src="images/2015-08-25-21_57_08-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"/></a> <a class="reference external" href="images/2015-08-25-21_57_22-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"><img alt="2015-08-25-21_57_22-New IOS router - c2691-jk9s-mz.123-17.image" src="images/2015-08-25-21_57_22-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"/></a> <a class="reference external" href="images/2015-08-25-21_58_01-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"><img alt="2015-08-25-21_58_01-New IOS router - c2691-jk9s-mz.123-17.image" src="images/2015-08-25-21_58_01-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"/></a> <a class="reference external" href="images/2015-08-25-21_59_26-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"><img alt="2015-08-25-21_59_26-New IOS router - c2691-jk9s-mz.123-17.image" src="images/2015-08-25-21_59_26-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"/></a></p>
+<p><a class="reference external" href="images/2015-08-25-21_55_51-Preferences.png"><img alt="2015-08-25-21_55_51-Preferences" src="images/2015-08-25-21_55_51-Preferences.png" /></a> <a class="reference external" href="images/2015-08-25-21_56_47-New-IOS-router-template.png"><img alt="2015-08-25-21_56_47-New IOS router template" src="images/2015-08-25-21_56_47-New-IOS-router-template.png" /></a> <a class="reference external" href="images/2015-08-25-21_57_08-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"><img alt="2015-08-25-21_57_08-New IOS router - c2691-jk9s-mz.123-17.image" src="images/2015-08-25-21_57_08-New-IOS-router-c2691-jk9s-mz.123-17.image_.png" /></a> <a class="reference external" href="images/2015-08-25-21_57_22-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"><img alt="2015-08-25-21_57_22-New IOS router - c2691-jk9s-mz.123-17.image" src="images/2015-08-25-21_57_22-New-IOS-router-c2691-jk9s-mz.123-17.image_.png" /></a> <a class="reference external" href="images/2015-08-25-21_58_01-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"><img alt="2015-08-25-21_58_01-New IOS router - c2691-jk9s-mz.123-17.image" src="images/2015-08-25-21_58_01-New-IOS-router-c2691-jk9s-mz.123-17.image_.png" /></a> <a class="reference external" href="images/2015-08-25-21_59_26-New-IOS-router-c2691-jk9s-mz.123-17.image_.png"><img alt="2015-08-25-21_59_26-New IOS router - c2691-jk9s-mz.123-17.image" src="images/2015-08-25-21_59_26-New-IOS-router-c2691-jk9s-mz.123-17.image_.png" /></a></p>
 <p>Pour la valeur de Idle-PC, ne recopiez pas bêtement ce qui est écrit dans cette fenêtre. Ce chiffre correspond
 seulement à ma machine. Cliquez sur le bouton Idle-Pc finder et GNS3
 trouvera la valeur de lui même. Cela peut prendre un peu de temps à
 calculer.</p>
-<p><a class="reference external" href="images/2015-08-25-21_59_40-Preferences.png"><img alt="2015-08-25-21_59_40-Preferences" src="images/2015-08-25-21_59_40-Preferences.png"/></a></p>
+<p><a class="reference external" href="images/2015-08-25-21_59_40-Preferences.png"><img alt="2015-08-25-21_59_40-Preferences" src="images/2015-08-25-21_59_40-Preferences.png" /></a></p>
 <p>Voilà, nous avons notrevrouteur c2691. On peut maintenant fermer la fenêtre de configuration et
 commencer notre projet.</p>
 </div>
@@ -128,26 +133,26 @@ place des routes statiques.</p>
 <p>Cliquez sur <em>Browse Routers</em> dans la colonne de gauche puis glissez 2
 fois le routeur c2691 dans le projet. Sur le routeur R1, faites un
 clique droit : <em>Configure</em></p>
-<p><a class="reference external" href="images/2015-08-25-22_02_55-FirstLab.gns3_-—-GNS3.png"><img alt="2015-08-25-22_02_55-FirstLab.gns3_ — GNS3" src="images/2015-08-25-22_02_55-FirstLab.gns3_-—-GNS3.png"/></a>
+<p><a class="reference external" href="images/2015-08-25-22_02_55-FirstLab.gns3_-—-GNS3.png"><img alt="2015-08-25-22_02_55-FirstLab.gns3_ — GNS3" src="images/2015-08-25-22_02_55-FirstLab.gns3_-—-GNS3.png" /></a>
 Renommez le en <strong>Rennes</strong> et dans l'onglet <em>slot</em>, ajoutez lui une carte NM-4T dans le
 Slot 1. Faites de même pour le routeur R2 en le renommant <strong>Paris</strong>.</p>
-<p><a class="reference external" href="images/2015-08-25-22_05_43-Node-configurator.png"><img alt="2015-08-25-22_05_43-Node configurator" src="images/2015-08-25-22_05_43-Node-configurator.png"/></a>
+<p><a class="reference external" href="images/2015-08-25-22_05_43-Node-configurator.png"><img alt="2015-08-25-22_05_43-Node configurator" src="images/2015-08-25-22_05_43-Node-configurator.png" /></a>
 Une fois de retour sur le
 projet, cliquez sur '<em>Add a Link'</em> dans la colonne de gauche et créer 2
 liens séries en cliquant dans un premier temps sur <em>Rennes &gt; Serial 1/0</em>
 puis <em>Paris &gt; Serial 1/0</em> pour le premier lien et <em>Rennes &gt; Serial 1/1</em>
 puis <em>Paris &gt; Serial 1/1</em> pour le second lien.</p>
-<p><a class="reference external" href="images/2015-08-25-22_07_19-FirstLab.gns3_-—-GNS3.png"><img alt="2015-08-25-22_07_19-FirstLab.gns3_ — GNS3" src="images/2015-08-25-22_07_19-FirstLab.gns3_-—-GNS3.png"/></a>
+<p><a class="reference external" href="images/2015-08-25-22_07_19-FirstLab.gns3_-—-GNS3.png"><img alt="2015-08-25-22_07_19-FirstLab.gns3_ — GNS3" src="images/2015-08-25-22_07_19-FirstLab.gns3_-—-GNS3.png" /></a>
 Vous devriez avoir
 quelque chose qui ressemble à ça :</p>
-<p><a class="reference external" href="images/2015-08-25-22_11_04-FirstLab.gns3_-—-GNS3.png"><img alt="2015-08-25-22_11_04-FirstLab.gns3_ — GNS3" src="images/2015-08-25-22_11_04-FirstLab.gns3_-—-GNS3.png"/></a>
+<p><a class="reference external" href="images/2015-08-25-22_11_04-FirstLab.gns3_-—-GNS3.png"><img alt="2015-08-25-22_11_04-FirstLab.gns3_ — GNS3" src="images/2015-08-25-22_11_04-FirstLab.gns3_-—-GNS3.png" /></a>
 J'ai moi même ajouté les
 notes sur les réseaux grâce aux notes que l'on peut insérer dans le
 projet.</p>
 <p>Une fois que c'est terminé, cliquez sur le Play vert qui se trouve en
 haut de l'interface afin de démarrer les routeurs.</p>
 <p>Nous allons enfin pouvoir ouvrir notre première console Cisco. Pour
-cela, clique droit sur un routeur &gt; <em>Console</em><a class="reference external" href="images/2015-08-25-22_19_50-FirstLab.gns3-—-GNS3.png"><img alt="2015-08-25-22_19_50-FirstLab.gns3 — GNS3" src="images/2015-08-25-22_19_50-FirstLab.gns3-—-GNS3.png"/></a>Pour préparer le lab, voici les
+cela, clique droit sur un routeur &gt; <em>Console</em><a class="reference external" href="images/2015-08-25-22_19_50-FirstLab.gns3-—-GNS3.png"><img alt="2015-08-25-22_19_50-FirstLab.gns3 — GNS3" src="images/2015-08-25-22_19_50-FirstLab.gns3-—-GNS3.png" /></a>Pour préparer le lab, voici les
 commandes à taper dans la console de Rennes :</p>
 <p>IOS supporte la tabulation et les raccourcis. Par exemple, pour taper
 <tt class="docutils literal">configure terminal</tt>, je peux taper <tt class="docutils literal">conf&lt;tab&gt; t&lt;tab&gt;</tt> ou tout
@@ -232,21 +237,21 @@ Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
 Success rate is 100 percent (5/5), round-trip min/avg/max = 128/136/148 ms
 Rennes(config)#do show ip route        //pour voir les routes statiques
 Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
-       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
-       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
-       E1 - OSPF external type 1, E2 - OSPF external type 2
-       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
-       ia - IS-IS inter area, * - candidate default, U - per-user static route
-       o - ODR, P - periodic downloaded static route
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E1 - OSPF external type 1, E2 - OSPF external type 2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ia - IS-IS inter area, * - candidate default, U - per-user static route
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; o - ODR, P - periodic downloaded static route
 
 Gateway of last resort is not set
 
-     1.0.0.0/24 is subnetted, 1 subnets
-S       1.1.1.0 [1/0] via 192.168.2.2
-     2.0.0.0/24 is subnetted, 1 subnets
-C       2.2.2.0 is directly connected, Loopback0
-C    192.168.1.0/24 is directly connected, Serial1/0
-C    192.168.2.0/24 is directly connected, Serial1/1
+&nbsp;&nbsp;&nbsp;&nbsp; 1.0.0.0/24 is subnetted, 1 subnets
+S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.1.1.0 [1/0] via 192.168.2.2
+&nbsp;&nbsp;&nbsp;&nbsp; 2.0.0.0/24 is subnetted, 1 subnets
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.2.2.0 is directly connected, Loopback0
+C&nbsp;&nbsp;&nbsp; 192.168.1.0/24 is directly connected, Serial1/0
+C&nbsp;&nbsp;&nbsp; 192.168.2.0/24 is directly connected, Serial1/1
 </pre>
 <p>Voilà pour la prise en main de GNS3 et la configuration basique de 2
 routeurs. Vous n'avez plus qu'à créer vos propres labs, ajouter des VM
@@ -254,23 +259,27 @@ et tenter de les faire communiquer par exemple.</p>
 <p>Je vous proposerais peut être moi même de nouveaux labs d'ici quelques
 temps</p>
 </div>
-</div>
-</article>
-</div>
-</div>
-<footer class="footer">
-<div class="container">
+
+    </div>
+  </article>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
 <div class="row">
-<ul class="col-sm-6 list-inline">
-<li class="list-inline-item"><a href="/archives.html">Archives</a></li>
-<li class="list-inline-item"><a href="/categories.html">Categories</a></li>
-<li class="list-inline-item"><a href="/tags.html">Tags</a></li>
-</ul>
-<p class="col-sm-6 text-sm-right text-muted">
-          Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a> / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">✨</a>
-</p>
-</div>
-</div>
-</footer>
+  <ul class="col-sm-6 list-inline">
+    <li class="list-inline-item"><a href="../../archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="../../categories.html">Categories</a></li>
+      <li class="list-inline-item"><a href="../../tags.html">Tags</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
+    / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+  </p>
+</div>    </div>
+  </footer>
+
 </body>
+
 </html>

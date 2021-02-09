@@ -1,72 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="fr">
 
-<html lang="en">
 <head>
-<!-- Required meta tags always come first -->
-<meta charset="utf-8"/>
-<meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<title>Nutanix Template for Zabbix | Aldevar - Le Blog
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>  Nutanix Template for Zabbix | Aldevar - Le Blog
 </title>
-<link href="/2016/03/nutanix-template-for-zabbix.html" rel="canonical"/>
-<link href="/feed/atom.xml" rel="alternate" title="Full Atom Feed" type="application/atom+xml"/>
-<link href="/theme/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="/theme/css/font-awesome.min.css" rel="stylesheet"/>
-<link href="/theme/css/pygments/default.min.css" rel="stylesheet"/>
-<link href="/theme/css/style.css" rel="stylesheet"/>
-<meta content="Cet article est également disponible en français For the needs of our infrastructure, I built a Nutanix Template for the monitoring plateforme Zabbix. This template automatically discover containers, CVMs, hard drives, hypervisors and virtual machines. Once the items are discovered, some metrics, graphs and triggers are deployed To be able …" name="description"/>
+  <link rel="canonical" href="../../2016/03/nutanix-template-for-zabbix.html">
+
+
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.css">
+  <link rel="stylesheet" href="../../theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="../../theme/css/theme.css">
+
+  <link rel="alternate" type="application/atom+xml" title="Full Atom Feed"
+        href="/feeds/all.atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Categories Atom Feed"
+        href="/feeds/{slug}.atom.xml">  
+  <meta name="description" content="Cet article est également disponible en français For the needs of our infrastructure, I built a Nutanix Template for the monitoring plateforme Zabbix. This template automatically discover containers, CVMs, hard drives, hypervisors and virtual machines. Once the items are discovered, some metrics, graphs and triggers are deployed To be able …">
+
+
 </head>
+
 <body>
-<header class="header">
-<div class="container">
+  <header class="header">
+    <div class="container">
 <div class="row">
-<div class="col-sm-4">
-<a href="/">
-<img alt="Aldevar - Le Blog" class="img-fluid" height="100" src="/images/avat180.png" width="100"/>
-</a>
-</div>
-<div class="col-sm-8">
-<h1 class="title"><a href="/">Aldevar - Le Blog</a></h1>
-<p class="text-muted">Un blog IT</p>
-<ul class="list-inline">
-<li class="list-inline-item"><a href="/pages/about.html">About</a></li>
-<li class=" list-inline-item text-muted">|</li>
-<li class="list-inline-item"><a class="fa fa-twitter" href="https://twitter.com/landvarx" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/alain-devarieux" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-github" href="https://github.com/aldevar" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-meetup" href="https://www.meetup.com/fr-FR/Rennes-Monitoring/" target="_blank"></a></li>
-</ul>
-</div>
-</div>
-</div>
-</header>
-<div class="main">
-<div class="container">
-<h1>Nutanix Template for Zabbix
+    <div class="col-sm-4">
+      <a href="../../">
+        <img class="img-fluid rounded" src=../../images/avat180.png width=100 height=100 alt="Aldevar - Le Blog">
+      </a>
+    </div>
+  <div class="col-sm-8">
+    <h1 class="title"><a href="../../">Aldevar - Le Blog</a></h1>
+      <p class="text-muted">Yet Another Blog</p>
+      <ul class="list-inline">
+            <li class="list-inline-item"><a href="../../pages/about.html">About</a></li>
+            <li class=" list-inline-item text-muted">|</li>
+          <li class="list-inline-item"><a class="fa fa-github" href="https://github.com/aldevar" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-twitter" href="https://twitter.com/landvarx" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/alain-devarieux" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-rss" href="../../feeds/all.atom.xml" target="_blank"></a></li>
+      </ul>
+  </div>
+</div>    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>  Nutanix Template for Zabbix
 </h1>
-<hr/>
-<article class="article">
-<header>
-<ul class="list-inline">
-<li class="list-inline-item text-muted" title="2016-03-31T17:35:00+02:00">
-<i class="fa fa-clock-o"></i>
-        jeu. 31 mars 2016
-      </li>
-<li class="list-inline-item">
-<i class="fa fa-folder-open-o"></i>
-<a href="/category/monitoring-tech.html">Monitoring, Tech</a>
-</li>
-<li class="list-inline-item">
-<i class="fa fa-files-o"></i>
-<a href="/tag/nutanix.html">#nutanix</a>,         <a href="/tag/supervision.html">#supervision</a>,         <a href="/tag/template.html">#template</a>,         <a href="/tag/zabbix.html">#zabbix</a> </li>
-<li>
-<i class="fa fa-book"></i>
-	2.0 min read
-      </li>
-</ul>
-</header>
-<div class="content">
-<p>Cet article est également disponible <a class="reference external" href="http://blog.devarieux.net/2016/03/template_nutanix_pour_zabbix/">en
+      <hr>
+  <article class="article">
+    <header>
+      <ul class="list-inline">
+        <li class="list-inline-item text-muted" title="2016-03-31T17:35:00+02:00">
+          <i class="fa fa-clock-o"></i>
+          Thu 31 March 2016
+        </li>
+        <li class="list-inline-item">
+          <i class="fa fa-folder-open-o"></i>
+          <a href="../../category/supervision.html">Supervision</a>
+        </li>
+          <li class="list-inline-item">
+            <i class="fa fa-files-o"></i>
+              <a href="../../tag/nutanix.html">#nutanix</a>,               <a href="../../tag/supervision.html">#supervision</a>,               <a href="../../tag/template.html">#template</a>,               <a href="../../tag/zabbix.html">#zabbix</a>          </li>
+      </ul>
+    </header>
+    <div class="content">
+      <p>Cet article est également disponible <a class="reference external" href="http://blog.devarieux.net/2016/03/template_nutanix_pour_zabbix/">en
 français</a></p>
 <p>For the needs of our infrastructure, I built a Nutanix Template for the
 monitoring plateforme Zabbix. This template automatically discover
@@ -83,12 +88,12 @@ auth and AES privacy.</p>
 <h2>Prism Central</h2>
 <p>The prism configuration is quite simple, using the SNMP configuration
 interface</p>
-<p><img alt="2016-03-18 09_52_19-Nutanix Web Console" src="images/2016-03-18-09_52_19-Nutanix-Web-Console.png"/></p>
+<p><img alt="2016-03-18 09_52_19-Nutanix Web Console" src="images/2016-03-18-09_52_19-Nutanix-Web-Console.png" /></p>
 <p>Make sure at least one Transport is configured in UDP, on the port of
 your choice (161 by default)</p>
-<p><img alt="2016-03-18 09_52_56-Nutanix Web Console" src="images/2016/03/2016-03-18-09_52_56-Nutanix-Web-Console.png"/></p>
+<p><img alt="2016-03-18 09_52_56-Nutanix Web Console" src="images/2016/03/2016-03-18-09_52_56-Nutanix-Web-Console.png" /></p>
 <p>Then, go in the 'Users' tab and add a new user for Zabbix.</p>
-<p><img alt="2016-03-18 09_53_41-Nutanix Web Console" src="images/2016-03-18-09_53_41-Nutanix-Web-Console.png"/></p>
+<p><img alt="2016-03-18 09_53_41-Nutanix Web Console" src="images/2016-03-18-09_53_41-Nutanix-Web-Console.png" /></p>
 <p>While you are here, you can download the MIB, we will need it later.</p>
 <p>Clic Save. The prim configuration is done.</p>
 </div>
@@ -148,23 +153,27 @@ Everything works fine in NOS 4.6</li>
 limitation on the Nutanix side.</li>
 </ul>
 </div>
-</div>
-</article>
-</div>
-</div>
-<footer class="footer">
-<div class="container">
+
+    </div>
+  </article>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
 <div class="row">
-<ul class="col-sm-6 list-inline">
-<li class="list-inline-item"><a href="/archives.html">Archives</a></li>
-<li class="list-inline-item"><a href="/categories.html">Categories</a></li>
-<li class="list-inline-item"><a href="/tags.html">Tags</a></li>
-</ul>
-<p class="col-sm-6 text-sm-right text-muted">
-          Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a> / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">✨</a>
-</p>
-</div>
-</div>
-</footer>
+  <ul class="col-sm-6 list-inline">
+    <li class="list-inline-item"><a href="../../archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="../../categories.html">Categories</a></li>
+      <li class="list-inline-item"><a href="../../tags.html">Tags</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
+    / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+  </p>
+</div>    </div>
+  </footer>
+
 </body>
+
 </html>

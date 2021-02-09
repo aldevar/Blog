@@ -1,69 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="fr">
 
-<html lang="en">
 <head>
-<!-- Required meta tags always come first -->
-<meta charset="utf-8"/>
-<meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<title>QRQVB : Datagramme IP | Aldevar - Le Blog
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>  QRQVB : Datagramme IP | Aldevar - Le Blog
 </title>
-<link href="/2009/09/qrqvb-datagramme-ip.html" rel="canonical"/>
-<link href="/feed/atom.xml" rel="alternate" title="Full Atom Feed" type="application/atom+xml"/>
-<link href="/theme/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="/theme/css/font-awesome.min.css" rel="stylesheet"/>
-<link href="/theme/css/pygments/default.min.css" rel="stylesheet"/>
-<link href="/theme/css/style.css" rel="stylesheet"/>
-<meta content="Je vais tenter dans cet article de décortiquer un datagramme IP et notamment son en-tête. Nous allons commencer par l’observation des encapsulations des données suivant le modèle OSI que nous avons étudié la dernière fois. Les données (couche application) sont encapsulées dans un message (couche 4, transport) qui est …" name="description"/>
+  <link rel="canonical" href="../../2009/09/qrqvb-datagramme-ip.html">
+
+
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.css">
+  <link rel="stylesheet" href="../../theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="../../theme/css/theme.css">
+
+  <link rel="alternate" type="application/atom+xml" title="Full Atom Feed"
+        href="/feeds/all.atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Categories Atom Feed"
+        href="/feeds/{slug}.atom.xml">  
+  <meta name="description" content="Je vais tenter dans cet article de décortiquer un datagramme IP et notamment son en-tête. Nous allons commencer par l’observation des encapsulations des données suivant le modèle OSI que nous avons étudié la dernière fois. Les données (couche application) sont encapsulées dans un message (couche 4, transport) qui est …">
+
+
 </head>
+
 <body>
-<header class="header">
-<div class="container">
+  <header class="header">
+    <div class="container">
 <div class="row">
-<div class="col-sm-4">
-<a href="/">
-<img alt="Aldevar - Le Blog" class="img-fluid" height="100" src="/images/avat180.png" width="100"/>
-</a>
-</div>
-<div class="col-sm-8">
-<h1 class="title"><a href="/">Aldevar - Le Blog</a></h1>
-<p class="text-muted">Un blog IT</p>
-<ul class="list-inline">
-<li class="list-inline-item"><a href="/pages/about.html">About</a></li>
-<li class=" list-inline-item text-muted">|</li>
-<li class="list-inline-item"><a class="fa fa-twitter" href="https://twitter.com/landvarx" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/alain-devarieux" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-github" href="https://github.com/aldevar" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-meetup" href="https://www.meetup.com/fr-FR/Rennes-Monitoring/" target="_blank"></a></li>
-</ul>
-</div>
-</div>
-</div>
-</header>
-<div class="main">
-<div class="container">
-<h1>QRQVB : Datagramme IP
+    <div class="col-sm-4">
+      <a href="../../">
+        <img class="img-fluid rounded" src=../../images/avat180.png width=100 height=100 alt="Aldevar - Le Blog">
+      </a>
+    </div>
+  <div class="col-sm-8">
+    <h1 class="title"><a href="../../">Aldevar - Le Blog</a></h1>
+      <p class="text-muted">Yet Another Blog</p>
+      <ul class="list-inline">
+            <li class="list-inline-item"><a href="../../pages/about.html">About</a></li>
+            <li class=" list-inline-item text-muted">|</li>
+          <li class="list-inline-item"><a class="fa fa-github" href="https://github.com/aldevar" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-twitter" href="https://twitter.com/landvarx" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/alain-devarieux" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-rss" href="../../feeds/all.atom.xml" target="_blank"></a></li>
+      </ul>
+  </div>
+</div>    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>  QRQVB : Datagramme IP
 </h1>
-<hr/>
-<article class="article">
-<header>
-<ul class="list-inline">
-<li class="list-inline-item text-muted" title="2009-09-16T11:07:00+02:00">
-<i class="fa fa-clock-o"></i>
-        mer. 16 septembre 2009
-      </li>
-<li class="list-inline-item">
-<i class="fa fa-folder-open-o"></i>
-<a href="/category/qrqvb.html">QRQVB</a>
-</li>
-<li>
-<i class="fa fa-book"></i>
-	5.0 min read
-      </li>
-</ul>
-</header>
-<div class="content">
-<p>Je vais tenter dans cet article de décortiquer un datagramme IP et
+      <hr>
+  <article class="article">
+    <header>
+      <ul class="list-inline">
+        <li class="list-inline-item text-muted" title="2009-09-16T11:07:00+02:00">
+          <i class="fa fa-clock-o"></i>
+          Wed 16 September 2009
+        </li>
+        <li class="list-inline-item">
+          <i class="fa fa-folder-open-o"></i>
+          <a href="../../category/qrqvb.html">QRQVB</a>
+        </li>
+      </ul>
+    </header>
+    <div class="content">
+      <p>Je vais tenter dans cet article de décortiquer un datagramme IP et
 notamment son en-tête. Nous allons commencer par l’observation des
 encapsulations des données suivant le <a class="reference external" href="http://blog.devarieux.net/2009/08/qrqvb-le-modele-osi/">modèle
 OSI</a> que nous
@@ -71,14 +76,14 @@ avons étudié la dernière fois. Les données (couche application) sont
 encapsulées dans un message (couche 4, transport) qui est lui même
 encapsulé dans un paquet (couche 3, réseau), lui même encapsulé dans une
 trame (couche 2, liaison). Rien ne vaut un bon dessin pour
-comprendre.<a class="reference external" href="/images/encaps.png"><img alt="encaps" src="/images/encaps.png"/></a></p>
+comprendre.<a class="reference external" href="/images/encaps.png"><img alt="encaps" src="/images/encaps.png" /></a></p>
 <p>Aujourd’hui, on va donc s’intéresser à ce que contient le petit carré
 vert lorsque le paquet est un paquet IP.</p>
 <p>Cet en-tête est codé par défaut sur 20 octets. Nous allons donc nous
 appliquer à décrypter le contenu de chacun de ses octets. J’ai fait pour
 cela un schéma pas terrible mais qui me servira de support pour les
 explications :p.</p>
-<p><a class="reference external" href="/images/entete1.png"><img alt="entete1" src="/images/entete1.png"/></a></p>
+<p><a class="reference external" href="/images/entete1.png"><img alt="entete1" src="/images/entete1.png" /></a></p>
 <ul>
 <li><p class="first"><strong>Le premier octet contient 2 informations.</strong></p>
 <ul class="simple">
@@ -101,8 +106,8 @@ aussi en 2 :</p>
 activée, 0 option desactivée)<ul>
 <li>1er bit : D → Positionné sur 1 pour privilégier le délai
 d’acheminement</li>
-<li>2ème bit : T → Positionné sur 1 pour privilégier le débit</li>
-<li>3ème bit : R → Positionné sur 1 pour privilégier la fiabilité</li>
+<li>2ème bit : T →&nbsp;Positionné sur 1 pour privilégier le débit</li>
+<li>3ème bit : R →&nbsp;Positionné sur 1 pour privilégier la fiabilité</li>
 <li>4ème bit : C → Positionné sur 1 pour privilégier le coût</li>
 </ul>
 </li>
@@ -189,12 +194,12 @@ graphique ou <strong>tcpdump</strong> en mode commande. Je vous laisse vous mêm
 découvrir ces applications. Je vais me contenter ici de montrer un
 screenshot d’une capture faite avec wireshark qui montre ce que ce
 logiciel peut nous dire sur le contenu de nos paquets.</p>
-<p><a class="reference external" href="/images/trame01.png"><img alt="trame01" src="/images/trame01.png"/></a></p>
+<p><a class="reference external" href="/images/trame01.png"><img alt="trame01" src="/images/trame01.png" /></a></p>
 <p>Voici le type de paquet que nous avons capturé. C’est un
 simple ping entre 2 machines se situant sur des réseaux différents.
 Wireshark nous dit déjà que c’est un paquet ICMP. Voyons le détail de ce
 datagramme :</p>
-<p><a class="reference external" href="/images/trame02.png"><img alt="trame02" src="/images/trame02.png"/></a></p>
+<p><a class="reference external" href="/images/trame02.png"><img alt="trame02" src="/images/trame02.png" /></a></p>
 <p>En dépliant le contenu de l’en-tête IP, voici ce que wireshark peut nous
 dire :</p>
 <ul class="simple">
@@ -210,28 +215,32 @@ routeurs, le paquet sera détruit.</li>
 <li>Enfin, à la fin, les IP de départ et de destination.</li>
 </ul>
 <p>Voilà, c’est terminé pour l’analyse de paquet de niveau 3. La prochaine
-fois, j’essaierai d’expliquer le contenu d’un en-tête  de niveau 4
+fois, j’essaierai d’expliquer le contenu d’un en-tête &nbsp;de niveau 4
 (couche transport : UDP, TCP etc…) ou de niveau 2 (couche liaison, trame
 ethernet). Si vous trouvez que cet article manque de précision n’hésitez
 pas à m’en faire part.</p>
 </div>
-</div>
-</article>
-</div>
-</div>
-<footer class="footer">
-<div class="container">
+
+    </div>
+  </article>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
 <div class="row">
-<ul class="col-sm-6 list-inline">
-<li class="list-inline-item"><a href="/archives.html">Archives</a></li>
-<li class="list-inline-item"><a href="/categories.html">Categories</a></li>
-<li class="list-inline-item"><a href="/tags.html">Tags</a></li>
-</ul>
-<p class="col-sm-6 text-sm-right text-muted">
-          Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a> / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">✨</a>
-</p>
-</div>
-</div>
-</footer>
+  <ul class="col-sm-6 list-inline">
+    <li class="list-inline-item"><a href="../../archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="../../categories.html">Categories</a></li>
+      <li class="list-inline-item"><a href="../../tags.html">Tags</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
+    / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+  </p>
+</div>    </div>
+  </footer>
+
 </body>
+
 </html>

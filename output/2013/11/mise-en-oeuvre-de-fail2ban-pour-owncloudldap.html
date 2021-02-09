@@ -1,72 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="fr">
 
-<html lang="en">
 <head>
-<!-- Required meta tags always come first -->
-<meta charset="utf-8"/>
-<meta content="ie=edge" http-equiv="x-ua-compatible"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<title>Mise en oeuvre de Fail2Ban pour Owncloud/Ldap | Aldevar - Le Blog
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>  Mise en oeuvre de Fail2Ban pour Owncloud/Ldap | Aldevar - Le Blog
 </title>
-<link href="/2013/11/mise-en-oeuvre-de-fail2ban-pour-owncloudldap.html" rel="canonical"/>
-<link href="/feed/atom.xml" rel="alternate" title="Full Atom Feed" type="application/atom+xml"/>
-<link href="/theme/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="/theme/css/font-awesome.min.css" rel="stylesheet"/>
-<link href="/theme/css/pygments/default.min.css" rel="stylesheet"/>
-<link href="/theme/css/style.css" rel="stylesheet"/>
-<meta content="Si vous stockez des données personnelles ou à caractères sensibles sur votre serveur owncloud, vous souhaitez sans doute que les malandrins s'aventurant à tester vos couples Login / Mot de passe par brutforce soient éjectés de votre serveur après un certains nombre de tentatives infructueuses. Fail2Ban fera le travail pour vous …" name="description"/>
+  <link rel="canonical" href="../../2013/11/mise-en-oeuvre-de-fail2ban-pour-owncloudldap.html">
+
+
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.css">
+  <link rel="stylesheet" href="../../theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="../../theme/css/theme.css">
+
+  <link rel="alternate" type="application/atom+xml" title="Full Atom Feed"
+        href="/feeds/all.atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Categories Atom Feed"
+        href="/feeds/{slug}.atom.xml">  
+  <meta name="description" content="Si vous stockez des données personnelles ou à caractères sensibles sur votre serveur owncloud, vous souhaitez sans doute que les malandrins s'aventurant à tester vos couples Login / Mot de passe par brutforce soient éjectés de votre serveur après un certains nombre de tentatives infructueuses. Fail2Ban fera le travail pour vous …">
+
+
 </head>
+
 <body>
-<header class="header">
-<div class="container">
+  <header class="header">
+    <div class="container">
 <div class="row">
-<div class="col-sm-4">
-<a href="/">
-<img alt="Aldevar - Le Blog" class="img-fluid" height="100" src="/images/avat180.png" width="100"/>
-</a>
-</div>
-<div class="col-sm-8">
-<h1 class="title"><a href="/">Aldevar - Le Blog</a></h1>
-<p class="text-muted">Un blog IT</p>
-<ul class="list-inline">
-<li class="list-inline-item"><a href="/pages/about.html">About</a></li>
-<li class=" list-inline-item text-muted">|</li>
-<li class="list-inline-item"><a class="fa fa-twitter" href="https://twitter.com/landvarx" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/alain-devarieux" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-github" href="https://github.com/aldevar" target="_blank"></a></li>
-<li class="list-inline-item"><a class="fa fa-meetup" href="https://www.meetup.com/fr-FR/Rennes-Monitoring/" target="_blank"></a></li>
-</ul>
-</div>
-</div>
-</div>
-</header>
-<div class="main">
-<div class="container">
-<h1>Mise en oeuvre de Fail2Ban pour Owncloud/Ldap
+    <div class="col-sm-4">
+      <a href="../../">
+        <img class="img-fluid rounded" src=../../images/avat180.png width=100 height=100 alt="Aldevar - Le Blog">
+      </a>
+    </div>
+  <div class="col-sm-8">
+    <h1 class="title"><a href="../../">Aldevar - Le Blog</a></h1>
+      <p class="text-muted">Yet Another Blog</p>
+      <ul class="list-inline">
+            <li class="list-inline-item"><a href="../../pages/about.html">About</a></li>
+            <li class=" list-inline-item text-muted">|</li>
+          <li class="list-inline-item"><a class="fa fa-github" href="https://github.com/aldevar" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-twitter" href="https://twitter.com/landvarx" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/alain-devarieux" target="_blank"></a></li>
+          <li class="list-inline-item"><a class="fa fa-rss" href="../../feeds/all.atom.xml" target="_blank"></a></li>
+      </ul>
+  </div>
+</div>    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>  Mise en oeuvre de Fail2Ban pour Owncloud/Ldap
 </h1>
-<hr/>
-<article class="article">
-<header>
-<ul class="list-inline">
-<li class="list-inline-item text-muted" title="2013-11-27T20:30:00+01:00">
-<i class="fa fa-clock-o"></i>
-        mer. 27 novembre 2013
-      </li>
-<li class="list-inline-item">
-<i class="fa fa-folder-open-o"></i>
-<a href="/category/tech.html">Tech</a>
-</li>
-<li class="list-inline-item">
-<i class="fa fa-files-o"></i>
-<a href="/tag/fail2ban.html">#fail2ban</a>,         <a href="/tag/ldap.html">#ldap</a>,         <a href="/tag/linux.html">#Linux</a>,         <a href="/tag/owncloud.html">#owncloud</a> </li>
-<li>
-<i class="fa fa-book"></i>
-	2.0 min read
-      </li>
-</ul>
-</header>
-<div class="content">
-<p>Si vous stockez des données personnelles ou à caractères sensibles sur
+      <hr>
+  <article class="article">
+    <header>
+      <ul class="list-inline">
+        <li class="list-inline-item text-muted" title="2013-11-27T20:30:00+01:00">
+          <i class="fa fa-clock-o"></i>
+          Wed 27 November 2013
+        </li>
+        <li class="list-inline-item">
+          <i class="fa fa-folder-open-o"></i>
+          <a href="../../category/tech.html">Tech</a>
+        </li>
+          <li class="list-inline-item">
+            <i class="fa fa-files-o"></i>
+              <a href="../../tag/fail2ban.html">#fail2ban</a>,               <a href="../../tag/ldap.html">#ldap</a>,               <a href="../../tag/linux.html">#Linux</a>,               <a href="../../tag/owncloud.html">#owncloud</a>          </li>
+      </ul>
+    </header>
+    <div class="content">
+      <p>Si vous stockez des données personnelles ou à caractères sensibles sur
 votre serveur owncloud, vous souhaitez sans doute que les malandrins
 s'aventurant à tester vos couples <em>Login / Mot de passe</em> par brutforce
 soient éjectés de votre serveur après un certains nombre de tentatives
@@ -87,14 +92,14 @@ lorsqu'on utilise une authentification via un serveur Ldap.</p>
 timezone soit correctement configurée sur le serveur. Vous pouvez faire
 cela à l'aide de la commande :</p>
 <pre class="literal-block">
-[root@server1]# tzselect
+[root&#64;server1]# tzselect
 </pre>
 <p>On va ensuite, créer le fichier qui servira à loguer les échecs de
 connexions</p>
 <pre class="literal-block">
-[root@server1]# touch /var/log/owncloud-fail.log
-[root@server1]# chmod 660 /var/log/owncloud-fail.log
-[root@server1]# chown root.apache /var/log/owncloud-fail.log
+[root&#64;server1]# touch /var/log/owncloud-fail.log
+[root&#64;server1]# chmod 660 /var/log/owncloud-fail.log
+[root&#64;server1]# chown root.apache&nbsp;/var/log/owncloud-fail.log
 </pre>
 </div>
 <div class="section" id="modification-du-backend-d-owncloud">
@@ -107,19 +112,19 @@ $today = new DateTime();
 date_timezone_set($today, timezone_open('Europe/Paris'));
 $IPClient=$_SERVER['REMOTE_ADDR'];
 $logAuth=fopen('/var/log/owncloud-fail.log', 'a+');
-fputs($logAuth, date_format($today, 'Y/m/d H:i:s') . " Password check failed for: \t" . $IPClient . "\n");
+fputs($logAuth, date_format($today, 'Y/m/d H:i:s') . &quot; Password check failed for: \t&quot; . $IPClient . &quot;\n&quot;);
 fclose($logAuth);
 </pre>
 <p>Dans le fichier apps/user_ldap/user_ldap.php, ligne 75. Dans la
-fonction checkPassword, entre le  <strong>if(count($ldap_users) &lt; 1)
-{</strong> et le  <strong>return false;</strong> insérez le code suivant :</p>
+fonction checkPassword, entre le&nbsp; <strong>if(count($ldap_users) &lt; 1)
+{</strong> et le&nbsp; <strong>return false;</strong> insérez le code suivant :</p>
 <pre class="literal-block">
-if($uid!="admin") {
+if($uid!=&quot;admin&quot;) {
 date_default_timezone_set('Europe/Paris');
-$today = date("Y/m/d H:i:s");
+$today = date(&quot;Y/m/d H:i:s&quot;);
 $IPClient=$_SERVER['REMOTE_ADDR'];
 $logAuth=fopen('/var/log/owncloud-fail.log', 'a+');
-fputs($logAuth, $today . " Password check failed for: \t" . $IPClient . "\n");
+fputs($logAuth, $today . &quot; Password check failed for: \t&quot; . $IPClient . &quot;\n&quot;);
 fclose($logAuth);
 </pre>
 <p>Puis, en dessous du return false, fermez l'instruction if en ajoutant un</p>
@@ -131,21 +136,21 @@ fclose($logAuth);
 dans le ldap, c'est l'admin d'owncloud. Afin ne ne pas loguer une
 connexion de l'utilisateur 'admin' en tant qu'erreur de connexion, il
 est nécessaire de vérifier que que c'est pas cet utilisateur qui se
-connecte. D'où le <strong>if($uid!="admin"){}</strong>. Veillez à modifier cette
+connecte. D'où le <strong>if($uid!=&quot;admin&quot;){}</strong>. Veillez à modifier cette
 valeur suivant la votre.</p>
 <p>La variable <strong>$ldap_users</strong> est un tableau contenant la liste des
 utilisateurs qui correspondent à la valeur saisie dans le login. Si
 cette table est vide, alors il y aura un échec de connexion logué.</p>
 <p>Le dernier ajout à faire se trouve un petit peu plus bas dans ce
 fichier, ligne 97, juste en dessous
-de <strong>if(!$this-&gt;areCredentialsValid($dn, $password)) {</strong> et au dessus
+de&nbsp;<strong>if(!$this-&gt;areCredentialsValid($dn, $password)) {</strong> et au dessus
 de <strong>return false;</strong>ajoutez le code suivant :</p>
 <pre class="literal-block">
 date_default_timezone_set('Europe/Paris');
-$today = date("Y/m/d H:i:s");
+$today = date(&quot;Y/m/d H:i:s&quot;);
 $IPClient=$_SERVER['REMOTE_ADDR'];
 $logAuth=fopen('/var/log/owncloud-fail.log', 'a+');
-fputs($logAuth, $today . " Password check failed for: \t" . $IPClient . "\n");
+fputs($logAuth, $today . &quot; Password check failed for: \t&quot; . $IPClient . &quot;\n&quot;);
 fclose($logAuth);
 </pre>
 </div>
@@ -175,23 +180,27 @@ failregex = &lt;HOST&gt;$
 </pre>
 <p>Relancez fail2ban et le tour est joué.</p>
 </div>
-</div>
-</article>
-</div>
-</div>
-<footer class="footer">
-<div class="container">
+
+    </div>
+  </article>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
 <div class="row">
-<ul class="col-sm-6 list-inline">
-<li class="list-inline-item"><a href="/archives.html">Archives</a></li>
-<li class="list-inline-item"><a href="/categories.html">Categories</a></li>
-<li class="list-inline-item"><a href="/tags.html">Tags</a></li>
-</ul>
-<p class="col-sm-6 text-sm-right text-muted">
-          Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a> / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">✨</a>
-</p>
-</div>
-</div>
-</footer>
+  <ul class="col-sm-6 list-inline">
+    <li class="list-inline-item"><a href="../../archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="../../categories.html">Categories</a></li>
+      <li class="list-inline-item"><a href="../../tags.html">Tags</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
+    / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+  </p>
+</div>    </div>
+  </footer>
+
 </body>
+
 </html>
