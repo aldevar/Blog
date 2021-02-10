@@ -12,7 +12,7 @@ SITESUBTITLE = 'Yet Another Blog'
 SITEIMAGE = '/images/avat180.png width=100 height=100'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_ATOM = 'feeds/atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
