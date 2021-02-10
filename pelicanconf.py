@@ -12,8 +12,8 @@ SITESUBTITLE = 'Yet Another Blog'
 SITEIMAGE = '/images/avat180.png width=100 height=100'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = 'feeds/atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+FEED_ALL_ATOM = 'feed/atom.xml'
+CATEGORY_FEED_ATOM = 'feed/{slug}.atom.xml'
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
@@ -44,7 +44,7 @@ ICONS = [
             ('github', 'https://github.com/aldevar'),
             ('twitter', 'https://twitter.com/landvarx'),
             ('linkedin', 'https://www.linkedin.com/in/alain-devarieux'),
-            ('rss', 'feeds/atom.xml'),
+            ('rss', 'https://blog.devarieux.net/feed/atom.xml'),
             ]
 BOOTSTRAP_CSS = 'https://bootswatch.com/4/solar/bootstrap.css'
 #BOOTSTRAP_CSS = 'https://bootswatch.com/4/slate/bootstrap.css'
