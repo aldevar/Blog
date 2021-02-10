@@ -44,7 +44,7 @@ ICONS = [
             ('github', 'https://github.com/aldevar'),
             ('twitter', 'https://twitter.com/landvarx'),
             ('linkedin', 'https://www.linkedin.com/in/alain-devarieux'),
-            ('rss', 'feeds/all.atom.xml'),
+            ('rss', 'feeds/atom.xml'),
             ]
 BOOTSTRAP_CSS = 'https://bootswatch.com/4/solar/bootstrap.css'
 #BOOTSTRAP_CSS = 'https://bootswatch.com/4/slate/bootstrap.css'
