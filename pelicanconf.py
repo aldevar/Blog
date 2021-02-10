@@ -3,7 +3,7 @@
 
 AUTHOR = 'Aldevar'
 SITENAME = 'Aldevar - Le Blog'
-SITEURL = ''
+SITEURL = 'https://blog.devarieux.net'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'fr'
