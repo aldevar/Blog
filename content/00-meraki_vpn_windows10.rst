@@ -26,7 +26,8 @@ Puis, dans le partie Authentication, il faut cocher Allow these protocols puis '
 
 Ensuite, il faut cliquer sur le bouton 'Advanced Settings' et entrer la PSK dans la fenêtre qui s'ouvre.
 On peut enfin valider le tout et se connecter au VPN. Si cela ne fonctionne pas, il est possible que ce soit une option de Windows dans la base de registre qui empêche la communication a travers les réseaux natés. Pour corriger cela, il faut ouvrir la base de registre en mode administrateur puis créer cette clé : 
-.. code-block::
+
+.. code::
 
     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent
     Nom : AssumeUDPEncapsulationContextOnSendRule
