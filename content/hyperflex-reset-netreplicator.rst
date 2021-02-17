@@ -23,3 +23,4 @@ Le première commande permet de supprimer un appairage déjà existant entre 2 c
 Une fois ces commandes executées, on peut de nouveau configurer le réseau de réplication.
 
 .. image:: /images/drnetwork.png
+   :alt: Hyperflex Replication Network
