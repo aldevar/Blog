@@ -1,5 +1,5 @@
-Zabbix - Superviser un cluster Ceph
-###################################
+Zabbix et TimescaleDB 2 - Erreur Z3005
+########################################
 :date: 2021-02-23 21:45
 :author: aldevar
 :category: Supervision
@@ -9,9 +9,9 @@ Zabbix - Superviser un cluster Ceph
 
 Depuis que Zabbix supporte officiellement le plugin PostreSQL TimescaleDB, je n'utilise plus que ce mode d'installation pour les différentes instances que j'ai à déployer.
 
-TimescaleDB est une time serie database et est donc particulièrement adapatée pour stocker des métriques de supervision. Le logiciel se présente comme un plugin à PostgreSQL et permet de transformer certaines tables d'une base en mode time series. Le gros avantage est que cela permet de stocker l'ensemble des informations dans un endroit unique, que ce soit la confiuration du logiciel (utilisateurs, droits d'accès, paramètres...) et aussi les métriques récupérées par le système de supervision. En plus de cela, timescaleDB propose le partitionnemet automatique des tables ainsi que la compression des données ayant plus de 7 jours.
+TimescaleDB est une time serie database et est donc particulièrement adapaté pour stocker des métriques de supervision. Le logiciel se présente comme un plugin à PostgreSQL et permet de transformer certaines tables d'une base en mode time series. Le gros avantage est que cela permet de stocker l'ensemble des informations dans un endroit unique, que ce soit la configuration du logiciel (utilisateurs, droits d'accès, paramètres...) et aussi les métriques récupérées par le système de supervision. En plus de cela, timescaleDB propose le partitionnemet automatique des tables ainsi que la compression des données ayant plus de 7 jours.
 
-On a donc d'un coté un gain opérationnel car on n'a plus q'une base de données à gérer et de l'autre un gain en ressources car les tables sont adaptées à ce qu'elles stockent et peuvent être compréssées pour des économies de stockage sustantielles.
+On a donc d'un coté un gain opérationnel car on n'a plus q'une base de données à gérer et de l'autre un gain en ressources car les tables sont adaptées à ce qu'elles stockent et peuvent être compréssées pour des économies de stockage substantielles.
 
 Lors de ma dernière installation, j'ai pu voir que le plugin TimescaleDB était sorti en version 2. La documentation de Zabbix ne spécifiant pas la version de TimescaleDB à installer, j'ai naturellement installé cette dernière version.
 
@@ -42,14 +42,16 @@ Mal m'en a pris! Cette version 2 n'est pas compatible avec Zabbix 5.2! J'ai pu l
 
 
 Cette erreur provient d'une incompatibilité entre Zabbix 5.2 et TimescaleDB 2. Cette incompatibilité est causée par des modifications de certaines fonctions de l'API de TimescaleDB, entre autre la fonction `add_compression_policy <https://docs.timescale.com/latest/api#add_compression_policy>`_. A partir de là, on a deux solutions. 
- - Soit on refait l'installation de TimescaleDB avec la dernière version 1.X.
- - Soit on tente de corriger ces erreurs.
+
+- Soit on refait l'installation de TimescaleDB avec la dernière version 1.X.
+- Soit on tente de corriger ces erreurs.
 
 J'ai opté pour la seconde option. En fouillant, j'ai trouvé un `ticket sur le Jira <https://support.zabbix.com/projects/ZBX/issues/ZBX-18854>`_ de Zabbix qui aborde ce problème. Dans les échanges, un utilisateur propose une solution avec quelques lignes à envoyer vers la db pour corriger tout ça. Voici comment la mettre en oeuvre. 
 
 On commence par se préparer à mettre à jour la base de données
 
 .. code-block:: text
+
     # systemctl stop zabbix-server
     # sudo -u postgres psql zabbix
 
@@ -83,4 +85,4 @@ On peut maintenant envoyer le code SQL suivant :
 
 
 On peut maintenant redémarrer le service zabbix-server (:code:`systemctl start zabbix-server`) et on voit dans les logs que les erreurs ont disparu.
-Zabix devrait rapidement corriger cela, dans un premier temps en mettant à jour la documentation et dans un second temps en adaptant l'application.
+Zabbix devrait rapidement corriger cela, dans un premier temps en mettant à jour la documentation et dans un second temps en adaptant l'application.
