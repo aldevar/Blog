@@ -2,7 +2,7 @@ Prise en main de GNS3 pour la simulation réseau
 ###############################################
 :date: 2015-08-19 21:57
 :author: aldevar
-:category: Réseaux
+:category: network
 :slug: prise-en-main-de-gns3-pour-la-simulation-reseau
 :status: published
 

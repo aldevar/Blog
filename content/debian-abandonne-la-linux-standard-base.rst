@@ -2,7 +2,7 @@ Debian abandonne la Linux Standard Base
 #######################################
 :date: 2015-10-20 21:56
 :author: alain
-:category: News
+:category: news
 :slug: debian-abandonne-la-linux-standard-base
 :status: published
 

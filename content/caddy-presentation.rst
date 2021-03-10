@@ -2,7 +2,7 @@ Présentation de Caddy
 #######################
 :date: 2021-02-19 06:55
 :author: Aldevar
-:category: Tech
+:category: web
 :tags: caddy, web
 :slug: caddy-presentation
 :status: published

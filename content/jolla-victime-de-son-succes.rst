@@ -2,7 +2,7 @@ Jolla victime de son succès
 ###########################
 :date: 2015-02-24 10:47
 :author: alain
-:category: MyLife
+:category: jolla
 :slug: jolla-victime-de-son-succes
 :status: published
 

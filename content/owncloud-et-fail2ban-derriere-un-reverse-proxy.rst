@@ -2,7 +2,7 @@ Owncloud et fail2ban derrière un reverse proxy
 ##############################################
 :date: 2013-12-05 18:32
 :author: alain
-:category: Tech
+:category: sysadmin
 :tags: fail2ban, owncloud, proxy, remote log, reverse, reverse proxy, rsyslog, syslog
 :slug: owncloud-et-fail2ban-derriere-un-reverse-proxy
 :status: published

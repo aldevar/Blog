@@ -2,7 +2,7 @@ To bulle or not to bulle
 ########################
 :date: 2012-05-22 19:39
 :author: alain
-:category: Humeur
+:category: humeur
 :tags: bulle, économie, facebook, finance
 :slug: to-bulle-or-not-to-bulle
 :status: published

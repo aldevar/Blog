@@ -2,7 +2,7 @@ GNU/Linux : Résolution de problèmes
 ###################################
 :date: 2009-12-25 19:34
 :author: alain
-:category: Tech
+:category: sysadmin
 :tags: aide, GNU, Linux, probleme
 :slug: gnulinux-resolution-de-problemes
 :status: published

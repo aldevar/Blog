@@ -2,7 +2,7 @@ QRQVB : Le modèle OSI
 #####################
 :date: 2009-08-17 18:30
 :author: aldevar
-:category: QRQVB
+:category: network
 :tags: osi, qrqvb, réseaux
 :slug: qrqvb-le-modele-osi
 :status: published

@@ -2,7 +2,7 @@ Cisco Hyperflex - Supprimer la configuration réseau de réplication
 ####################################################################
 :date: 2021-02-03 21:40
 :author: Aldevar
-:category: Tech
+:category: sysadmin
 :tags: hyperflex, cisco
 :slug: reset-hyperflex-replication-network
 :status: published

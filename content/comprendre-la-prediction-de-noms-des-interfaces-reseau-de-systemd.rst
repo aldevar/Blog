@@ -2,7 +2,7 @@ Comprendre la prédiction de noms des interfaces réseau de systemd
 #################################################################
 :date: 2015-08-22 23:58
 :author: alain
-:category: Tech
+:category: sysadmin
 :slug: comprendre-la-prediction-de-noms-des-interfaces-reseau-de-systemd
 :status: published
 

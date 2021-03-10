@@ -2,7 +2,7 @@ Template Nutanix pour Zabbix
 ############################
 :date: 2016-03-31 17:32
 :author: aldevar
-:category: Supervision
+:category: sysadmin
 :tags: nutanix, supervision, template, zabbix
 :slug: template_nutanix_pour_zabbix
 :status: published

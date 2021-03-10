@@ -2,7 +2,7 @@ GNS3 - Créer son premier Lab
 ############################
 :date: 2015-08-26 10:03
 :author: alain
-:category: Réseaux, Virtualisation
+:category: network
 :slug: gns3-creer-son-premier-lab
 :status: published
 

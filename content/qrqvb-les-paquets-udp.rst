@@ -2,7 +2,7 @@ QRQVB : Les paquets UDP
 #######################
 :date: 2009-12-29 11:23
 :author: alain
-:category: QRQVB
+:category: network
 :slug: qrqvb-les-paquets-udp
 :status: published
 

@@ -2,7 +2,7 @@ Monitoring 101 : Les alertes durant les astreintes
 ##################################################
 :date: 2017-10-29 19:30
 :author: alain
-:category: Supervision
+:category: sysadmin
 :slug: monitoring-101-alertes-durant-astreintes
 :status: published
 

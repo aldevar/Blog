@@ -2,7 +2,7 @@ Scripter, programmer
 ####################
 :date: 2015-09-25 07:14
 :author: alain
-:category: Humeur
+:category: humeur
 :slug: scripter-programmer
 :status: published
 

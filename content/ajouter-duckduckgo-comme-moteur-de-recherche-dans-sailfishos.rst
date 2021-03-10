@@ -2,7 +2,7 @@ Ajouter Duckduckgo comme moteur de recherche dans SailfishOS
 ############################################################
 :date: 2015-08-20 22:10
 :author: alain
-:category: Tech
+:category: jolla
 :slug: ajouter-duckduckgo-comme-moteur-de-recherche-dans-sailfishos
 :status: published
 

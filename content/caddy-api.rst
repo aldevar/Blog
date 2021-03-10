@@ -2,7 +2,7 @@ Pilotage de Caddy par API
 ###########################
 :date: 2021-02-21 00:23
 :author: Aldevar
-:category: Tech
+:category: web
 :tags: caddy, web, automatisation
 :slug: caddy-api
 :status: published

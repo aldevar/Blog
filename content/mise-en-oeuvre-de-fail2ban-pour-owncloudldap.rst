@@ -2,7 +2,7 @@ Mise en oeuvre de Fail2Ban pour Owncloud/Ldap
 #############################################
 :date: 2013-11-27 20:30
 :author: alain
-:category: Tech
+:category: sysadmin
 :tags: fail2ban, ldap, Linux, owncloud
 :slug: mise-en-oeuvre-de-fail2ban-pour-owncloudldap
 :status: published

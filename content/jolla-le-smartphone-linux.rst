@@ -2,7 +2,7 @@ Jolla - Le Smartphone Linux
 ###########################
 :date: 2015-02-07 18:01
 :author: alain
-:category: Tech
+:category: jolla
 :tags: google, jolla, Linux
 :slug: jolla-le-smartphone-linux
 :status: published

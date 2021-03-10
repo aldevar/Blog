@@ -2,7 +2,7 @@ Se connecter en SSH à son Jolla
 ###############################
 :date: 2015-03-03 23:19
 :author: alain
-:category: Tech
+:category: jolla
 :slug: se-connecter-en-ssh-a-son-jolla
 :status: published
 

@@ -2,7 +2,7 @@ QRQVB : Datagramme IP
 #####################
 :date: 2009-09-16 11:07
 :author: alain
-:category: QRQVB
+:category: network
 :slug: qrqvb-datagramme-ip
 :status: published
 

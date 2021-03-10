@@ -2,7 +2,7 @@ Galera Mariadb: Load balancing et Failover HAproxy
 ##################################################
 :date: 2016-06-21 21:47
 :author: alain
-:category: Linux, Tech
+:category: sysadmin
 :tags: cluster, failover, galera, ha, haproxy, mariadb, mysql
 :slug: galera-load-balancing-failover-haproxy
 :status: published

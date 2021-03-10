@@ -2,7 +2,7 @@ Comment vais-je me passer des services de Google?
 #################################################
 :date: 2013-06-26 21:31
 :author: alain
-:category: Humeur
+:category: humeur
 :tags: google, owncloud, prism, snowden
 :slug: comment-vais-je-me-passer-des-services-de-google
 :status: published

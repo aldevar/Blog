@@ -2,7 +2,7 @@ Vmware tools, Centos 7 et customisation
 #######################################
 :date: 2015-08-14 22:39
 :author: alain
-:category: Tech
+:category: sysadmin
 :slug: vmware-tools-centos-7-et-customisation
 :status: published
 

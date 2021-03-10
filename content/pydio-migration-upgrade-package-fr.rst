@@ -2,7 +2,7 @@ Pydio : migration, upgrade, package [FR]
 ########################################
 :date: 2016-05-27 23:02
 :author: alain
-:category: Tech
+:category: sysadmin
 :tags: centos, Linux, pydio
 :slug: pydio-migration-upgrade-package-fr
 :status: published

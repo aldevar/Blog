@@ -2,7 +2,7 @@ Zabbix et TimescaleDB 2 - Erreur Z3005
 ########################################
 :date: 2021-02-23 21:45
 :author: aldevar
-:category: Supervision
+:category: sysadmin
 :tags: timescaledb, zabbix
 :slug: zabbix-timescaledb2
 :status: published

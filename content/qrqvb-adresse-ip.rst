@@ -2,7 +2,7 @@ QRQVB : L'adresse IP
 ####################
 :date: 2009-09-16 19:12
 :author: alain
-:category: QRQVB
+:category: network
 :tags: ip, qrqvb, réseaux
 :slug: qrqvb-adresse-ip
 :status: published

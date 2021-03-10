@@ -2,7 +2,7 @@ Zimbra : Envoi de mails via un relais SMTP authentifié
 ######################################################
 :date: 2016-06-24 08:30
 :author: alain
-:category: Tech
+:category: sysadmin
 :tags: email, relais, smtp, spam, zimbra
 :slug: relais-smtp-authentifie-zimbra
 :status: published

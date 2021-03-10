@@ -2,7 +2,7 @@ QRQVB : Protocole TCP
 #####################
 :date: 2010-02-02 07:00
 :author: alain
-:category: QRQVB
+:category: network
 :slug: qrqvb-protocole-tcp
 :status: published
 

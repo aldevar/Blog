@@ -2,7 +2,7 @@ Firefox comme navigateur par défaut de SailfishOS
 #################################################
 :date: 2015-08-24 09:17
 :author: alain
-:category: Tech
+:category: jolla
 :slug: firefox-comme-navigateur-par-defaut-de-sailfishos
 :status: published
 

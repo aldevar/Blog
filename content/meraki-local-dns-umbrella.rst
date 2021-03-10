@@ -2,7 +2,7 @@ Utilisation d'un DNS interne avec Umbrella sous Cisco Meraki
 #############################################################
 :date: 2021-03-02 22:20
 :author: Aldevar
-:category: Tech
+:category: network
 :tags: reseau, meraki, cisco, umbrella, dns
 :slug: meraki-umbrella-and-internal-dns
 :status: published
