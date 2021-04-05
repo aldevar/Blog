@@ -19,6 +19,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 THEME = 'themes/pelican-alchemy/alchemy'
+PYGMENTS_STYLE = 'monokai'
+
 
 # Blogroll
 #LINKS = (('Pelican', 'https://getpelican.com/'),
@@ -46,7 +48,8 @@ ICONS = [
             ('linkedin', 'https://www.linkedin.com/in/alain-devarieux'),
             ('rss', '/feed/atom.xml'),
             ]
-BOOTSTRAP_CSS = 'https://bootswatch.com/4/solar/bootstrap.css'
+BOOTSTRAP_CSS = 'https://bootswatch.com/4/superhero/bootstrap.css'
+#BOOTSTRAP_CSS = 'https://bootswatch.com/4/solar/bootstrap.css'
 #BOOTSTRAP_CSS = 'https://bootswatch.com/4/slate/bootstrap.css'
 #THEME_CSS_OVERRIDES = ['theme/css/oldstyle.css']
 HIDE_AUTHORS = True
