@@ -2,8 +2,7 @@ VPN Meraki et Fedora
 #######################
 :date: 2021-04-12 18:32
 :author: Aldevar
-:category: sysadmin
-:tags: cisco, meraki, vpn, reseau
+:category: Sysadmin
 :slug: vpn-meraki-fedora
 :status: published
 

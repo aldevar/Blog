@@ -1,9 +1,8 @@
 Migration OpenLDAP 2.2 vers OpenLDAP 2.4
 ########################################
 :date: 2015-10-30 23:24
-:author: alain
-:category: sysadmin
-:tags: centos, migration, openldap, slap
+:author: Aldevar
+:category: Sysadmin
 :slug: migration-openldap-2-2-vers-openldap-2-4
 :status: published
 

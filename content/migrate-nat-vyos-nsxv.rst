@@ -2,8 +2,7 @@ Migrer des règles de NAT VyOS vers NSX-V
 ########################################
 :date: 2021-02-10 09:22
 :author: Aldevar
-:category: automatisation
-:tags: automatisation, python, vyos, nsx, reseau
+:category: Réseau
 :slug: migrate-nat-vyos-nsxv
 :status: published
 

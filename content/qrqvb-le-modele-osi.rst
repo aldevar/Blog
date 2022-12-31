@@ -1,9 +1,8 @@
 QRQVB : Le modèle OSI
 #####################
 :date: 2009-08-17 18:30
-:author: aldevar
-:category: network
-:tags: osi, qrqvb, réseaux
+:author: Aldevar
+:category: Réseau
 :slug: qrqvb-le-modele-osi
 :status: published
 
@@ -36,7 +35,8 @@ pas très clair pour le moment, mais ça va le devenir.
 Schéma du modèle
 ~~~~~~~~~~~~~~~~
 
-|modele\_OSI|
+.. image:: {static}/images/modele_OSI.gif
+  :target: images/modele_OSI.gif
 
 Le modèle OSI est donc représenté en 7 couches distinctes. J'ai ici
 représenté 2 machines (Système A et Système B) pour bien montrer que
@@ -131,5 +131,4 @@ Exemples de protocoles
 #. Présentation → ASCII, Unicode, ASN.1, Videotex
 #. Application → HTTP, SMTP, POP, FTP, DNS, SNMP
 
-.. |modele_OSI| image:: images/modele_OSI.gif
-   :target: images/modele_OSI.gif
+

@@ -1,9 +1,8 @@
 Résolutions de début d'année
 ############################
 :date: 2013-12-28 18:22
-:author: alain
-:category: humeur
-:tags: laptop, mylife, owncloud, pc
+:author: Aldevar
+:category: Humeur
 :slug: resolution-de-debut-dannee
 :status: published
 

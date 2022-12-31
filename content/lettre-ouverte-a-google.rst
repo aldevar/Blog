@@ -1,8 +1,8 @@
 Lettre ouverte à Google
 #######################
 :date: 2011-08-11 10:22
-:author: alain
-:category: humeur
+:author: Aldevar
+:category: Humeur
 :slug: lettre-ouverte-a-google
 :status: published
 

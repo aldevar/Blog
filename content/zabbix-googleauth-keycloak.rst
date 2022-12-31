@@ -2,8 +2,7 @@ Zabbix - Authentification SAML avec Keycloak et provider Google Auth
 #####################################################################
 :date: 2021-12-29 00:23
 :author: Aldevar
-:category: supervision
-:tags: zabbix, authentification, keycloak
+:category: Supervision
 :slug: zabbix-saml-keycloak-google
 :status: published
 
@@ -122,13 +121,11 @@ Dans une nouvelle fenêtre en navigation privée, vous pouvez vous connecter sur
 
 .. image:: /images/Zabbix-Auth-SAML.png
     :alt: Page d'Authentification Zabbix avec option SAML
-    :align: center
 
 |
 
 .. image:: /images/Keycloak-Auth-Google.png
     :alt: Page d'Authentification Keycloak avec option Google
-    :align: center
     
 |
 

@@ -1,9 +1,8 @@
 Pas à pas - monter un cluster Galera Mariadb
 ############################################
 :date: 2016-06-20 22:40
-:author: alain
-:category: sysadmin
-:tags: bdd, cluster, galera, Linux, mariadb
+:author: Aldevar
+:category: Sysadmin
 :slug: monter-cluster-galera-mariadb
 :status: published
 

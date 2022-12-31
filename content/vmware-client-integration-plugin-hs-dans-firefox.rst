@@ -1,8 +1,8 @@
 Vmware Client Integration Plugin HS dans Firefox
 ################################################
 :date: 2015-08-23 14:00
-:author: alain
-:category: sysadmin
+:author: Aldevar
+:category: Sysadmin
 :slug: vmware-client-integration-plugin-hs-dans-firefox
 :status: published
 

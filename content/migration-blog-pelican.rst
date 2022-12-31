@@ -3,8 +3,7 @@ Migration du Blog sur Pelican
 
 :date: 2017-11-02 22:45
 :modified: 2017-11-02 22:45
-:tags: blog, python, pelican
-:category: meta
+:category: None
 :slug: migration-blog-pelican
 :authors: Aldevar
 :summary: Migration du blog sur Pelican, generateur de site static en Python.

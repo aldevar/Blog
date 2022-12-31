@@ -1,8 +1,8 @@
 QRQVB : Les paquets UDP
 #######################
 :date: 2009-12-29 11:23
-:author: alain
-:category: network
+:author: Aldevar
+:category: Réseau
 :slug: qrqvb-les-paquets-udp
 :status: published
 
@@ -33,7 +33,8 @@ cette fonction ce fait à l’aide d’un chiffre nommé **Port**.
 En tête UDP
 ~~~~~~~~~~~
 
-|encaps|
+.. image:: {static}/images/encaps.png
+  :target: /images/encaps.png
 
  
 
@@ -45,7 +46,8 @@ l’on traite un p>aquet UDP.
 
 Le paquet UDP est composé de 8 octets.
 
- |entete|
+.. image:: {static}/images/entete.png
+  :target: /images/entete.png
 
 **Les 2 premiers octets contiennent le port source**. Codé sur 16 bits
 donc. C’est le numéro de port de l’émetteur du paquet. C’est aussi le
@@ -144,7 +146,5 @@ risque supplémentaire de perte de données.
 Nous verrons comment TCP peut palier à ce problème dans la prochaine
 QRQVB
 
-.. |encaps| image:: /images/encaps.png
-   :target: /images/encaps.png
-.. |entete| image:: /images/entete.png
-   :target: /images/entete.png
+
+

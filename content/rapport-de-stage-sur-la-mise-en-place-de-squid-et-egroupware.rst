@@ -1,8 +1,8 @@
 Rapport de stage sur la mise en place de Squid et Egroupware
 ############################################################
 :date: 2010-01-06 15:05
-:author: alain
-:category: sysadmin
+:author: Aldevar
+:category: Sysadmin
 :slug: rapport-de-stage-sur-la-mise-en-place-de-squid-et-egroupware
 :status: published
 

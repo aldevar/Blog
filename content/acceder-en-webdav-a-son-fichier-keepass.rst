@@ -1,9 +1,8 @@
 Accéder en webdav à son fichier Keepass
-#######################################
+#############################################
 :date: 2014-09-05 22:54
-:author: alain
-:category: web
-:tags: apache, centos, keepass, ssl, webdav
+:author: Aldevar
+:category: Sysadmin
 :slug: acceder-en-webdav-a-son-fichier-keepass
 :status: published
 

@@ -1,9 +1,8 @@
 Remboursement de licence Windows 8 sur portable ASUS - Episode 2
 ################################################################
 :date: 2013-10-19 17:51
-:author: alain
+:author: Aldevar
 :category: Tech
-:tags: acf_coa, asus, remboursement, windows
 :slug: remboursement-de-licence-windows-8-sur-portable-asus-episode-2
 :status: published
 

@@ -1,9 +1,8 @@
 Jolla - Le Smartphone Linux
 ###########################
 :date: 2015-02-07 18:01
-:author: alain
-:category: jolla
-:tags: google, jolla, Linux
+:author: Aldevar
+:category: Tech
 :slug: jolla-le-smartphone-linux
 :status: published
 
@@ -60,9 +59,9 @@ qu'il va y avoir des bugs, que je vais perdre en confort mais comme le
 dit si bien l'ami qui m'a montré son Jolla la première fois, c'est aussi
 un achat engagé.
 
-|jolla-launch-2|
+.. image:: {static}/images/jolla-launch-2-300x226.jpg
+  :target: /images/jolla-launch-2.jpg
 
 J'attends maintenant impatiemment de recevoir mon colis.
 
-.. |jolla-launch-2| image:: /images/jolla-launch-2-300x226.jpg
-   :target: /images/jolla-launch-2.jpg
+

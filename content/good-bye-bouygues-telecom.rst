@@ -1,9 +1,8 @@
 Good Bye Bouygues Telecom
 #########################
 :date: 2012-11-02 16:00
-:author: alain
-:category: humeur
-:tags: B&amp;You, Bouygues, fibre, forfait, Free, internet
+:author: Aldevar
+:category: Humeur
 :slug: good-bye-bouygues-telecom
 :status: published
 

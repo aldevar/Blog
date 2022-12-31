@@ -1,9 +1,8 @@
 Prise en main du smartphone de Jolla
 ####################################
 :date: 2015-02-21 00:29
-:author: alain
-:category: jolla
-:tags: jolla, sailfishos
+:author: Aldevar
+:category: Tech
 :slug: prise-en-main-du-smartphone-de-jolla
 :status: published
 

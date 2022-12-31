@@ -2,8 +2,7 @@ L'ingé qui veut des responsabilités
 #####################################
 :date: 2021-03-17 22:30
 :author: Aldevar
-:category: career
-:tags: senior, career
+:category: Humeur
 :slug: senior
 :status: published
 

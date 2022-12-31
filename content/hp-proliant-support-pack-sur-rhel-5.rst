@@ -1,9 +1,8 @@
 HP Proliant Support Pack sur RHEL 5
 ###################################
 :date: 2013-07-23 18:07
-:author: alain
-:category: sysadmin
-:tags: HPSIM, hpsum, insight manager, ksym, proliant support pack, psp, redhat
+:author: Aldevar
+:category: Sysadmin
 :slug: hp-proliant-support-pack-sur-rhel-5
 :status: published
 

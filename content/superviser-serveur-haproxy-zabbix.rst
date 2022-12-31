@@ -1,8 +1,8 @@
 Superviser un serveur HAproxy avec Zabbix
 #########################################
 :date: 2016-08-01 08:30
-:author: alain
-:category: sysadmin
+:author: Aldevar
+:category: Supervision
 :slug: superviser-serveur-haproxy-zabbix
 :status: published
 
@@ -79,12 +79,11 @@ Une fois toutes ces métriques récupérées, j'ai pu construire un
 dashboard Grafana afin d'avoir rapidement sous les yeux l'état général
 du cluster.
 
-|Grafana-GaleraMariaDB et HAproxy|
+.. image:: {static}/images/Grafana-Galera.png
+  :target: /images/Grafana-Galera.png
 
 Le script, le template Zabbix et le fichier de paramétrage de l'agent
 sont disponible `sur
 Github <https://github.com/aldevar/Zabbix_HAproxy>`__
 
-.. |Grafana-GaleraMariaDB et HAproxy| image:: /images/Grafana-Galera.png
-   :target: /images/Grafana-Galera.png
-   :class: image-process-large-photo
+

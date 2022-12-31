@@ -1,9 +1,8 @@
 Trop de requêtes ARP - Régler le timeout de la table ARP
 ########################################################
 :date: 2015-01-21 20:18
-:author: alain
-:category: netwrok
-:tags: arp, kernel, Linux, osi, requête, table
+:author: Aldevar
+:category: Réseau
 :slug: trop-de-requetes-arp-regler-le-timeout-de-la-table-arp
 :status: published
 

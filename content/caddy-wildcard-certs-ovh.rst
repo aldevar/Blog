@@ -2,8 +2,7 @@ Caddy, OVH et les certificats wildcard
 ########################################
 :date: 2021-04-05 08:55
 :author: Aldevar
-:category: Tech
-:tags: caddy, web, acme, ovh
+:category: Sysadmin
 :slug: caddy-ovh-acme
 :status: published
 

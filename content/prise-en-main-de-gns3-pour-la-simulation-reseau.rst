@@ -1,8 +1,8 @@
 Prise en main de GNS3 pour la simulation réseau
 ###############################################
 :date: 2015-08-19 21:57
-:author: aldevar
-:category: network
+:author: Aldevar
+:category: Réseau
 :slug: prise-en-main-de-gns3-pour-la-simulation-reseau
 :status: published
 
@@ -44,55 +44,69 @@ compatible Windows, Linux et Mac. L'installeur va installer pour vous
 tous les outils nécessaire pour la virtualisation et la capture de
 paquets.
 
-|2015-08-17 23\_30\_55-GNS3 1.3.9 Setup|
+.. image:: {static}/images/2015-08-17-23_30_55-GNS3-1.3.9-Setup-300x233.png
+  :target: images/2015-08-17-23_30_55-GNS3-1.3.9-Setup.png
 
 Sous Windows, l'installation
 est assez classique. Après avoir lancé l'installeur, la fenêtre de setup
 apparaît, il suffit alors de suivre les indications jusqu'à arriver à
 cette fenêtre :
 
-|2015-08-17 23\_33\_08-GNS3 1.3.9 Setup|
+.. image:: {static}/images/2015-08-17-23_33_08-GNS3-1.3.9-Setup-300x233.png
+  :target: images/2015-08-17-23_33_08-GNS3-1.3.9-Setup.png
 
-Il est préférable de laisser
-tout cocher, ainsi si des logiciels ont besoin de mise à jour, elles
-seront faites. En cliquant sur Next, l'installeur va lancer
-l'installation de winPcap
+Il est préférable de laisser tout cocher, ainsi si des logiciels ont besoin de mise à jour, elles seront faites. En cliquant sur Next, l'installeur va lancer
+l'installation de winPcap.
 
-|2015-08-17 23\_33\_29-WinPcap 4.1.3 Setup|
+.. image:: {static}/images/2015-08-17-23_33_29-WinPcap-4.1.3-Setup-300x233.png
+  :target: images/2015-08-17-23_33_29-WinPcap-4.1.3-Setup.png
 
-|2015-08-17 23\_33\_42-WinPcap 4.1.3 Setup|
+.. image:: {static}/images/2015-08-17-23_33_42-WinPcap-4.1.3-Setup-300x233.png
+  :target: images/2015-08-17-23_33_42-WinPcap-4.1.3-Setup.png
 
 On laisse cocher le lancement automatique du driver au démarrage.
 
 Ensuite, l'installeur télécharge et installe Wireshark
 
-|2015-08-17 23\_33\_59-GNS3 1.3.9 Setup| |2015-08-17
-23\_34\_14-Wireshark 1.12.4 (64-bit) Setup| |2015-08-17
-23\_34\_39-Wireshark 1.12.4 (64-bit) Setup|
+.. image:: {static}/images/2015-08-17-23_33_59-GNS3-1.3.9-Setup-300x233.png
+  :target: images/2015-08-17-23_33_59-GNS3-1.3.9-Setup.png
+
+.. image:: {static}/images/2015-08-17-23_34_14-Wireshark-1.12.4-64-bit-Setup-300x233.png
+  :target: images/2015-08-17-23_34_14-Wireshark-1.12.4-64-bit-Setup.png
+
+.. image:: {static}/images/2015-08-17-23_34_39-Wireshark-1.12.4-64-bit-Setup-300x233.png
+  :target: images/2015-08-17-23_34_39-Wireshark-1.12.4-64-bit-Setup.png
 
 WinPcap est déjà installé donc on décoche l'option
-|2015-08-1723\_34\_56-Wireshark 1.12.4 (64-bit) Setup| |2015-08-17
-23\_35\_47-Wireshark 1.12.4 (64-bit) Setup|
 
-On décoche 'Run Wireshark',
-on ne va pas en avoir besoin tout de suite.
+.. image:: {static}/images/2015-08-17-23_34_56-Wireshark-1.12.4-64-bit-Setup-300x233.png
+  :target: images/2015-08-17-23_34_56-Wireshark-1.12.4-64-bit-Setup.png
 
- 
+.. image:: {static}/images/2015-08-17-23_35_47-Wireshark-1.12.4-64-bit-Setup-300x233.png
+  :target: images/2015-08-17-23_35_47-Wireshark-1.12.4-64-bit-Setup.png
+
+On décoche 'Run Wireshark',on ne va pas en avoir besoin tout de suite.
+
 
 L'installation se poursuit avec cette fois SolarWinds Response Time
 Viewer qui est une application d'analyse de capture Wireshark
 
-|2015-08-17 23\_37\_13-SolarWinds Registration| 
+.. image:: {static}/images/2015-08-17-23_37_13-SolarWinds-Registration-300x168.png
+  :target: images/2015-08-17-23_37_13-SolarWinds-Registration.png
 
 Ici, vous pouvez mettre ce que vous voulez, l'adresse n'est pas vérifiée
 
-|2015-08-17 23\_38\_54-SolarWinds Response Time Viewer for Windows| 
+.. image:: {static}/images/2015-08-17-23_38_54-SolarWinds-Response-Time-Viewer-for-Windows-300x213.png
+  :target: images/2015-08-17-23_38_54-SolarWinds-Response-Time-Viewer-for-Windows.png
 
 L'application se lance automatiquement. Je vous invite à en
 faire un tour rapide avant de la fermer
 
-|2015-08-17 23\_40\_09-GNS3 1.3.9 Setup| |2015-08-17 23\_40\_30-GNS3
-1.3.9 Setup| 
+.. image:: {static}/images/2015-08-17-23_40_09-GNS3-1.3.9-Setup-300x233.png
+  :target: images/2015-08-17-23_40_09-GNS3-1.3.9-Setup.png
+  
+.. image:: {static}/images/2015-08-17-23_40_30-GNS3-1.3.9-Setup-300x233.png
+  :target: images/2015-08-17-23_40_30-GNS3-1.3.9-Setup.png
 
 SolarWinds vous propose une licence gratuite pour son
 software. Je n'ai pas testé comment acquérir cette licence et je ne sais
@@ -102,31 +116,3 @@ Voilà pour la description et l'installation de GNS3. La prochaine fois,
 on verra comment le configurer et y créer de nouveau routeur, switchs et
 VM.
 
- 
-
-.. |2015-08-17 23_30_55-GNS3 1.3.9 Setup| image:: images/2015-08-17-23_30_55-GNS3-1.3.9-Setup-300x233.png
-   :target: images/2015-08-17-23_30_55-GNS3-1.3.9-Setup.png
-.. |2015-08-17 23_33_08-GNS3 1.3.9 Setup| image:: images/2015-08-17-23_33_08-GNS3-1.3.9-Setup-300x233.png
-   :target: images/2015-08-17-23_33_08-GNS3-1.3.9-Setup.png
-.. |2015-08-17 23_33_29-WinPcap 4.1.3 Setup| image:: images/2015-08-17-23_33_29-WinPcap-4.1.3-Setup-300x233.png
-   :target: images/2015-08-17-23_33_29-WinPcap-4.1.3-Setup.png
-.. |2015-08-17 23_33_42-WinPcap 4.1.3 Setup| image:: images/2015-08-17-23_33_42-WinPcap-4.1.3-Setup-300x233.png
-   :target: images/2015-08-17-23_33_42-WinPcap-4.1.3-Setup.png
-.. |2015-08-17 23_33_59-GNS3 1.3.9 Setup| image:: images/2015-08-17-23_33_59-GNS3-1.3.9-Setup-300x233.png
-   :target: images/2015-08-17-23_33_59-GNS3-1.3.9-Setup.png
-.. |2015-08-17 23_34_14-Wireshark 1.12.4 (64-bit) Setup| image:: images/2015-08-17-23_34_14-Wireshark-1.12.4-64-bit-Setup-300x233.png
-   :target: images/2015-08-17-23_34_14-Wireshark-1.12.4-64-bit-Setup.png
-.. |2015-08-17 23_34_39-Wireshark 1.12.4 (64-bit) Setup| image:: images/2015-08-17-23_34_39-Wireshark-1.12.4-64-bit-Setup-300x233.png
-   :target: images/2015-08-17-23_34_39-Wireshark-1.12.4-64-bit-Setup.png
-.. |2015-08-1723_34_56-Wireshark 1.12.4 (64-bit) Setup| image:: images/2015-08-17-23_34_56-Wireshark-1.12.4-64-bit-Setup-300x233.png
-   :target: images/2015-08-17-23_34_56-Wireshark-1.12.4-64-bit-Setup.png
-.. |2015-08-17 23_35_47-Wireshark 1.12.4 (64-bit) Setup| image:: images/2015-08-17-23_35_47-Wireshark-1.12.4-64-bit-Setup-300x233.png
-   :target: images/2015-08-17-23_35_47-Wireshark-1.12.4-64-bit-Setup.png
-.. |2015-08-17 23_37_13-SolarWinds Registration| image:: images/2015-08-17-23_37_13-SolarWinds-Registration-300x168.png
-   :target: images/2015-08-17-23_37_13-SolarWinds-Registration.png
-.. |2015-08-17 23_38_54-SolarWinds Response Time Viewer for Windows| image:: images/2015-08-17-23_38_54-SolarWinds-Response-Time-Viewer-for-Windows-300x213.png
-   :target: images/2015-08-17-23_38_54-SolarWinds-Response-Time-Viewer-for-Windows.png
-.. |2015-08-17 23_40_09-GNS3 1.3.9 Setup| image:: images/2015-08-17-23_40_09-GNS3-1.3.9-Setup-300x233.png
-   :target: images/2015-08-17-23_40_09-GNS3-1.3.9-Setup.png
-.. |2015-08-17 23_40_30-GNS3 1.3.9 Setup| image:: images/2015-08-17-23_40_30-GNS3-1.3.9-Setup-300x233.png
-   :target: images/2015-08-17-23_40_30-GNS3-1.3.9-Setup.png

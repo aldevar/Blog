@@ -1,8 +1,8 @@
 Monitoring 101 : Que faut-il surveiller?
 ########################################
 :date: 2017-11-12 16:52
-:author: aldevar
-:category: sysadmin
+:author: Aldevar
+:category: Supervision
 :slug: monitoring-101-que-surveiller
 :status: published
 

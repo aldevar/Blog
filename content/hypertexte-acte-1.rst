@@ -3,8 +3,7 @@ HyperText Acte 1
 
 :date: 2017-11-03 22:45
 :modified: 2017-11-03 22:45
-:tags: lien
-:category: liens
+:category: None
 :slug: hypertexte-acte-1
 :authors: Aldevar
 :summary: Voici une collection de liens trouvés ou partagés dernièrement. Je les penses suffisamment utiles pour vous les partager à mon tour.

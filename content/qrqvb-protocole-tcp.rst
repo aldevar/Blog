@@ -1,8 +1,8 @@
 QRQVB : Protocole TCP
 #####################
 :date: 2010-02-02 07:00
-:author: alain
-:category: network
+:author: Aldevar
+:category: Réseau
 :slug: qrqvb-protocole-tcp
 :status: published
 
@@ -51,7 +51,8 @@ Il apporte en contrepartie des services beaucoup plus élaborés.
 Entête TCP
 ~~~~~~~~~~
 
-|enteteTCP1|
+.. image:: {static}/images/enteteTCP1.png
+  :target: /images/enteteTCP1.png
 
 L’entête TCP est codé sur 20 octets hors options.
 
@@ -94,7 +95,8 @@ L’entête TCP est codé sur 20 octets hors options.
 Établissement d’une connexion
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-|ConnectionTCP|
+.. image:: {static}/images/ConnectionTCP.png
+  :target: /images/ConnectionTCP.png
 
 Une ouverture de connexion TCP s’effectue en 3 temps.
 
@@ -119,7 +121,5 @@ applications sont en mesure d’échanger des données.
 
  
 
-.. |enteteTCP1| image:: /images/enteteTCP1.png
-   :target: /images/enteteTCP1.png
-.. |ConnectionTCP| image:: /images/ConnectionTCP.png
-   :target: /images/ConnectionTCP.png
+
+

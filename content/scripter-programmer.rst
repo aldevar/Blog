@@ -1,8 +1,8 @@
 Scripter, programmer
 ####################
 :date: 2015-09-25 07:14
-:author: alain
-:category: humeur
+:author: Aldevar
+:category: Humeur
 :slug: scripter-programmer
 :status: published
 

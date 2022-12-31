@@ -2,8 +2,7 @@ HyperText Acte 1
 #################
 
 :date: 2017-11-03 22:45
-:tags: lien
-:category: Tech
+:category: None
 :slug: hypertexte-acte-X
 :authors: Aldevar
 :summary: Voici une collection de liens trouvés ou partagés dernièrement. Je les penses suffisamment utiles pour vous les partager à mon tour.

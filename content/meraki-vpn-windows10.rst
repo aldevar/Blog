@@ -2,8 +2,7 @@ VPN Meraki et Windows 10
 #########################
 :date: 2021-02-17 21:47
 :author: Aldevar
-:category: sysadmin
-:tags: cisco, meraki, vpn, reseau
+:category: Sysadmin
 :slug: vpn-meraki-win10
 :status: published
 

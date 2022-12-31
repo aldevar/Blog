@@ -1,9 +1,8 @@
 Veille Open Source pour les pros
 ################################
 :date: 2013-12-18 18:48
-:author: alain
-:category: sysadmin
-:tags: annuaire, libre, open source, smile
+:author: Aldevar
+:category: Sysadmin
 :slug: veille-open-source-pour-les-pros
 :status: published
 

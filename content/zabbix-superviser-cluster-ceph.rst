@@ -1,9 +1,8 @@
 Zabbix - Superviser un cluster Ceph
 ###################################
 :date: 2016-07-05 21:45
-:author: alain
-:category: sysadmin
-:tags: ceph, devops, python, zabbix
+:author: Aldevar
+:category: Supervision
 :slug: zabbix-superviser-cluster-ceph
 :status: published
 

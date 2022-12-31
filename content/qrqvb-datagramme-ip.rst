@@ -1,8 +1,8 @@
 QRQVB : Datagramme IP
 #####################
 :date: 2009-09-16 11:07
-:author: alain
-:category: network
+:author: Aldevar
+:category: Réseau
 :slug: qrqvb-datagramme-ip
 :status: published
 
@@ -14,7 +14,10 @@ avons étudié la dernière fois. Les données (couche application) sont
 encapsulées dans un message (couche 4, transport) qui est lui même
 encapsulé dans un paquet (couche 3, réseau), lui même encapsulé dans une
 trame (couche 2, liaison). Rien ne vaut un bon dessin pour
-comprendre.\ |encaps|
+comprendre.\ 
+
+.. image:: {static}/images/encaps.png
+  :target: /images/encaps.png
 
 Aujourd’hui, on va donc s’intéresser à ce que contient le petit carré
 vert lorsque le paquet est un paquet IP.
@@ -26,7 +29,8 @@ explications :p.
 
  
 
-|entete1|
+.. image:: {static}/images/entete1.png
+  :target: /images/entete1.png
 
  
 
@@ -132,14 +136,16 @@ découvrir ces applications. Je vais me contenter ici de montrer un
 screenshot d’une capture faite avec wireshark qui montre ce que ce
 logiciel peut nous dire sur le contenu de nos paquets.
 
-|trame01|
+.. image:: {static}/images/trame01.png
+  :target: /images/trame01.png
 
 Voici le type de paquet que nous avons capturé. C’est un
 simple ping entre 2 machines se situant sur des réseaux différents.
 Wireshark nous dit déjà que c’est un paquet ICMP. Voyons le détail de ce
 datagramme :
 
-|trame02|
+.. image:: {static}/images/trame02.png
+  :target: /images/trame02.png
 
 En dépliant le contenu de l’en-tête IP, voici ce que wireshark peut nous
 dire :
@@ -161,11 +167,11 @@ fois, j’essaierai d’expliquer le contenu d’un en-tête  de niveau 4
 ethernet). Si vous trouvez que cet article manque de précision n’hésitez
 pas à m’en faire part.
 
-.. |encaps| image:: /images/encaps.png
-   :target: /images/encaps.png
-.. |entete1| image:: /images/entete1.png
-   :target: /images/entete1.png
-.. |trame01| image:: /images/trame01.png
-   :target: /images/trame01.png
-.. |trame02| image:: /images/trame02.png
-   :target: /images/trame02.png
+
+
+
+
+
+
+
+

@@ -1,9 +1,8 @@
 Playskool présente: Numéricable concurrence Netflix
 ###################################################
 :date: 2014-09-16 11:02
-:author: alain
-:category: humeur
-:tags: fibre, nc, netflix, numericable, SVOD, VOD
+:author: Aldevar
+:category: Humeur
 :slug: numericable-concurrence-netflix
 :status: published
 

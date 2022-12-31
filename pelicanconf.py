@@ -18,8 +18,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-THEME = 'themes/pelican-alchemy/alchemy'
-PYGMENTS_STYLE = 'monokai'
+THEME = 'themes/m.css/pelican-theme'
+THEME_STATIC_DIR = 'static'
+DIRECT_TEMPLATES = ['index']
+
+M_CSS_FILES = ['https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600','/static/m-dark.css']
+M_THEME_COLOR = '#22272e'
+M_SITE_LOGO_TEXT = 'ADX'
+PLUGIN_PATHS = ['themes/m.css/plugins']
+PLUGINS = ['m.htmlsanity', 'm.images']
+M_LINKS_NAVBAR1 = [('About', '/pages/about/', 'about', [])]
+#PYGMENTS_STYLE = 'monokai'
 
 
 # Blogroll
@@ -42,14 +51,14 @@ ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{slug}.html"
 #ARTICLE_SAVE_AS = "posts/{slug}/index.html"
 
 ## Alchemy Specific Variables
-ICONS = [
-            ('github', 'https://github.com/aldevar'),
-            ('twitter', 'https://twitter.com/landvarx'),
-            ('linkedin', 'https://www.linkedin.com/in/alain-devarieux'),
-            ('rss', '/feed/atom.xml'),
-            ]
-BOOTSTRAP_CSS = 'https://bootswatch.com/4/superhero/bootstrap.css'
+#ICONS = [
+#            ('github', 'https://github.com/aldevar'),
+#            ('twitter', 'https://twitter.com/landvarx'),
+#            ('linkedin', 'https://www.linkedin.com/in/alain-devarieux'),
+#            ('rss', '/feed/atom.xml'),
+#            ]
+#BOOTSTRAP_CSS = 'https://bootswatch.com/4/superhero/bootstrap.css'
 #BOOTSTRAP_CSS = 'https://bootswatch.com/4/solar/bootstrap.css'
 #BOOTSTRAP_CSS = 'https://bootswatch.com/4/slate/bootstrap.css'
 #THEME_CSS_OVERRIDES = ['theme/css/oldstyle.css']
-HIDE_AUTHORS = True
+#HIDE_AUTHORS = True

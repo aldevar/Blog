@@ -1,9 +1,8 @@
 Le web 2.0 est-il une idiocratie?
 #################################
 :date: 2011-07-24 19:37
-:author: alain
-:category: humeur
-:tags: google, idiot, myspace, soundcloud, web
+:author: Aldevar
+:category: Humeur
 :slug: le-web-2-0-est-il-une-idiocratie
 :status: published
 

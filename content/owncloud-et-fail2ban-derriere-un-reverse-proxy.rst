@@ -1,9 +1,8 @@
 Owncloud et fail2ban derrière un reverse proxy
 ##############################################
 :date: 2013-12-05 18:32
-:author: alain
-:category: sysadmin
-:tags: fail2ban, owncloud, proxy, remote log, reverse, reverse proxy, rsyslog, syslog
+:author: Aldevar
+:category: Sysadmin
 :slug: owncloud-et-fail2ban-derriere-un-reverse-proxy
 :status: published
 
@@ -55,7 +54,7 @@ Modification du backend d'owncloud
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dans le fichier */var/www/html/owncloud/lib/user/database.php*, ligne
-202. Dans la fonction **checkPassword**, entre le else et le return
+1.   Dans la fonction **checkPassword**, entre le else et le return
 false, insérez le code suivant :
 
 ::

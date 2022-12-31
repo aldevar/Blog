@@ -1,9 +1,8 @@
 QRQVB : L'adresse IP
 ####################
 :date: 2009-09-16 19:12
-:author: alain
-:category: network
-:tags: ip, qrqvb, réseaux
+:author: Aldevar
+:category: Réseau
 :slug: qrqvb-adresse-ip
 :status: published
 
@@ -34,7 +33,8 @@ vais plutôt vous montrer un exemple.
 |  Voici une adresse IP : 192.168.1.15
 |  Voici un masque de réseau : 255.255.255.0
 
-|netmask1|
+.. image:: {static}/images/netmask1.png
+  :target: /images/netmask1.png
 
 En fait, pour être plus précis, les bits se situant dans la partie de
 l’identificateur réseau sont tous positionnés sur 1 et les bits de la
@@ -54,7 +54,8 @@ doivent emprunter nos paquets IP. Pour bien comprendre ce système, nous
 allons jouer un peu avec le binaire, même si je sais que ça va en
 rebuter plus d’un :p
 
-|binaire|
+.. image:: {static}/images/binaire.png
+  :target: /images/binaire.png
 
 Ceci est important puisque c’est de cette manière qu’on va pouvoir
 déterminer le nombre maximal de machines qui peuvent appartenir à un
@@ -69,7 +70,8 @@ une autre machine sur le réseau en l’appelant.
 
 Voici un exemple de capture de trame avec wireshark :
 
-|arp2|
+.. image:: {static}/images/arp2.png
+  :target: /images/arp2.png
 
 Le premier paquet est donc une requête ARP. La machine source envoie ce
 message sur tout le réseau : ‘who has 192.168.1.51?  Tell 192.168.1.25′.
@@ -134,9 +136,6 @@ ajouter un nouveau sous réseau à notre entreprise pour y connecter un
 nouveau bâtiment par exemple. Ça a vite tendance à tourner cacahuète si
 on fait pas attention.
 
-.. |netmask1| image:: /images/netmask1.png
-   :target: /images/netmask1.png
-.. |binaire| image:: /images/binaire.png
-   :target: /images/binaire.png
-.. |arp2| image:: /images/arp2.png
-   :target: /images/arp2.png
+
+
+

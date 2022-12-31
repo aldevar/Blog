@@ -1,8 +1,8 @@
 GNS3 - Créer son premier Lab
 ############################
 :date: 2015-08-26 10:03
-:author: alain
-:category: network
+:author: Aldevar
+:category: Réseau
 :slug: gns3-creer-son-premier-lab
 :status: published
 
@@ -22,16 +22,23 @@ Au premier lancement de GNS3, il vous est proposé de créer un projet, ce
 que nous allons faire tout de suite en enregistrant ce projet sous le
 nom FirstLab.
 
-|2015-08-25-21\_47\_47-Prise_en_main_de_GNS3_pour_la_simulation_réseau| |2015-08-25-21\_48\_59-New-project|\ Une fois le
-projet créé, on va ajouter un routeur dans la configuration de GNS3.
+.. image:: images/2015-08-25-21_47_47-Prise-en-main-de-GNS3-pour-la-simulation-réseau-À-La-Benne-Nightly.png
+  :target: images/2015-08-25-21_47_47-Prise-en-main-de-GNS3-pour-la-simulation-réseau-À-La-Benne-Nightly.png
+
+
+.. image:: {static}/images/2015-08-25-21_48_59-New-project.png
+  :target: images/2015-08-25-21_48_59-New-project.png 
+ 
+Une fois le projet créé, on va ajouter un routeur dans la configuration de GNS3.
 Pour cela, on se rend dans Edit > Preferences.
 
-|2015-08-25-21\_51\_11-Preferences|\ Je vous laisse parcourir les
-options afin que vous puissiez comprendre un peu mieux le logiciel. Si
-vous avez des VM VirtualBox, GNS3 les trouvera et vous les listera dans
-le menu VirtualBox
+.. image:: {static}/images/2015-08-25-21_51_11-Preferences.png
+  :target: images/2015-08-25-21_51_11-Preferences.png
 
-|2015-08-25-22\_00\_01-Preferences|
+Je vous laisse parcourir les options afin que vous puissiez comprendre un peu mieux le logiciel. Si vous avez des VM VirtualBox, GNS3 les trouvera et vous les listera dans le menu VirtualBox.
+
+.. image:: {static}/images/2015-08-25-22_00_01-Preferences.png
+  :target: images/2015-08-25-22_00_01-Preferences.png
 
 Ajout d'un routeur
 ~~~~~~~~~~~~~~~~~~
@@ -40,22 +47,30 @@ Pour ajouter un routeur Cisco, on se rend dans Dynamips > IOS Router et
 on clique sur New. Il suffit ensuite de suivre les indications et de
 fournir l'image IOS du routeur qu'on souhaite voir apparaître.
 
-|2015-08-25-21\_55\_51-Preferences| |2015-08-25-21\_56\_47-New IOS
-router template| |2015-08-25-21\_57\_08-New IOS router -
-c2691-jk9s-mz.123-17.image| |2015-08-25-21\_57\_22-New IOS router -
-c2691-jk9s-mz.123-17.image| |2015-08-25-21\_58\_01-New IOS router -
-c2691-jk9s-mz.123-17.image| |2015-08-25-21\_59\_26-New IOS router -
-c2691-jk9s-mz.123-17.image|
+.. image:: {static}/images/2015-08-25-21_55_51-Preferences.png
+  :target: images/2015-08-25-21_55_51-Preferences.png
 
-Pour la valeur de Idle-PC, ne recopiez pas bêtement ce qui est écrit dans cette fenêtre. Ce chiffre correspond
-seulement à ma machine. Cliquez sur le bouton Idle-Pc finder et GNS3
-trouvera la valeur de lui même. Cela peut prendre un peu de temps à
-calculer. 
+.. image:: {static}/images/2015-08-25-21_56_47-New-IOS-router-template.png
+  :target: images/2015-08-25-21_56_47-New-IOS-router-template.png
 
-|2015-08-25-21\_59\_40-Preferences|
+.. image:: {static}/images/2015-08-25-21_57_08-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
+  :target: images/2015-08-25-21_57_08-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
 
-Voilà, nous avons notrevrouteur c2691. On peut maintenant fermer la fenêtre de configuration et
-commencer notre projet.
+.. image:: {static}/images/2015-08-25-21_57_22-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
+  :target: images/2015-08-25-21_57_22-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
+
+.. image:: {static}/images/2015-08-25-21_58_01-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
+  :target: images/2015-08-25-21_58_01-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
+
+.. image:: {static}/images/2015-08-25-21_59_26-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
+  :target: images/2015-08-25-21_59_26-New-IOS-router-c2691-jk9s-mz.123-17.image_.png|
+
+Pour la valeur de Idle-PC, ne recopiez pas bêtement ce qui est écrit dans cette fenêtre. Ce chiffre correspond seulement à ma machine. Cliquez sur le bouton Idle-Pc finder et GNS3 trouvera la valeur de lui même. Cela peut prendre un peu de temps à calculer. 
+
+.. image:: {static}/images/2015-08-25-21_59_40-Preferences.png
+  :target: images/2015-08-25-21_59_40-Preferences.png
+
+Voilà, nous avons notrevrouteur c2691. On peut maintenant fermer la fenêtre de configuration et commencer notre projet.
 
 Le Lab
 ~~~~~~
@@ -92,22 +107,30 @@ Cliquez sur *Browse Routers* dans la colonne de gauche puis glissez 2
 fois le routeur c2691 dans le projet. Sur le routeur R1, faites un
 clique droit : *Configure*
 
-|2015-08-25-22\_02\_55-FirstLab.gns3\_ — GNS3| 
+.. image:: {static}/images/2015-08-25-22_02_55-FirstLab.gns3_-—-GNS3.png
+  :target: images/2015-08-25-22_02_55-FirstLab.gns3_-—-GNS3.png
+
+
 Renommez le en **Rennes** et dans l'onglet *slot*, ajoutez lui une carte NM-4T dans le
 Slot 1. Faites de même pour le routeur R2 en le renommant **Paris**.
 
-|2015-08-25-22\_05\_43-Node configurator|
+.. image:: {static}/images/2015-08-25-22_05_43-Node-configurator.png
+  :target: images/2015-08-25-22_05_43-Node-configurator.png
+
 Une fois de retour sur le
 projet, cliquez sur '*Add a Link'* dans la colonne de gauche et créer 2
 liens séries en cliquant dans un premier temps sur *Rennes > Serial 1/0*
 puis *Paris > Serial 1/0* pour le premier lien et *Rennes > Serial 1/1*
 puis *Paris > Serial 1/1* pour le second lien.
 
-|2015-08-25-22\_07\_19-FirstLab.gns3\_ — GNS3|
-Vous devriez avoir
-quelque chose qui ressemble à ça :
+.. image:: {static}/images/2015-08-25-22_07_19-FirstLab.gns3_-—-GNS3.png
+  :target: images/2015-08-25-22_07_19-FirstLab.gns3_-—-GNS3.png
 
-|2015-08-25-22\_11\_04-FirstLab.gns3\_ — GNS3|
+Vous devriez avoir quelque chose qui ressemble à ça :
+
+.. image:: {static}/images/2015-08-25-22_11_04-FirstLab.gns3_-—-GNS3.png
+  :target: images/2015-08-25-22_11_04-FirstLab.gns3_-—-GNS3.png
+
 J'ai moi même ajouté les
 notes sur les réseaux grâce aux notes que l'on peut insérer dans le
 projet.
@@ -116,7 +139,12 @@ Une fois que c'est terminé, cliquez sur le Play vert qui se trouve en
 haut de l'interface afin de démarrer les routeurs.
 
 Nous allons enfin pouvoir ouvrir notre première console Cisco. Pour
-cela, clique droit sur un routeur > *Console*\ |2015-08-25-22\_19\_50-FirstLab.gns3 — GNS3|\ Pour préparer le lab, voici les
+cela, clique droit sur un routeur > *Console*\ 
+
+.. image:: {static}/images/2015-08-25-22_19_50-FirstLab.gns3-—-GNS3.png
+  :target: images/2015-08-25-22_19_50-FirstLab.gns3-—-GNS3.png
+
+Pour préparer le lab, voici les
 commandes à taper dans la console de Rennes :
 
 IOS supporte la tabulation et les raccourcis. Par exemple, pour taper
@@ -239,39 +267,3 @@ et tenter de les faire communiquer par exemple.
 Je vous proposerais peut être moi même de nouveaux labs d'ici quelques
 temps
 
- 
-
- 
-
-.. |2015-08-25-21_47_47-Prise_en_main_de_GNS3_pour_la_simulation_réseau| image:: images/2015-08-25-21_47_47-Prise-en-main-de-GNS3-pour-la-simulation-réseau-À-La-Benne-Nightly.png
-   :target: images/2015-08-25-21_47_47-Prise-en-main-de-GNS3-pour-la-simulation-réseau-À-La-Benne-Nightly.png
-.. |2015-08-25-21_48_59-New-project| image:: images/2015-08-25-21_48_59-New-project.png
-   :target: images/2015-08-25-21_48_59-New-project.png
-.. |2015-08-25-21_51_11-Preferences| image:: images/2015-08-25-21_51_11-Preferences.png
-   :target: images/2015-08-25-21_51_11-Preferences.png
-.. |2015-08-25-22_00_01-Preferences| image:: images/2015-08-25-22_00_01-Preferences.png
-   :target: images/2015-08-25-22_00_01-Preferences.png
-.. |2015-08-25-21_55_51-Preferences| image:: images/2015-08-25-21_55_51-Preferences.png
-   :target: images/2015-08-25-21_55_51-Preferences.png
-.. |2015-08-25-21_56_47-New IOS router template| image:: images/2015-08-25-21_56_47-New-IOS-router-template.png
-   :target: images/2015-08-25-21_56_47-New-IOS-router-template.png
-.. |2015-08-25-21_57_08-New IOS router - c2691-jk9s-mz.123-17.image| image:: images/2015-08-25-21_57_08-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
-   :target: images/2015-08-25-21_57_08-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
-.. |2015-08-25-21_57_22-New IOS router - c2691-jk9s-mz.123-17.image| image:: images/2015-08-25-21_57_22-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
-   :target: images/2015-08-25-21_57_22-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
-.. |2015-08-25-21_58_01-New IOS router - c2691-jk9s-mz.123-17.image| image:: images/2015-08-25-21_58_01-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
-   :target: images/2015-08-25-21_58_01-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
-.. |2015-08-25-21_59_26-New IOS router - c2691-jk9s-mz.123-17.image| image:: images/2015-08-25-21_59_26-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
-   :target: images/2015-08-25-21_59_26-New-IOS-router-c2691-jk9s-mz.123-17.image_.png
-.. |2015-08-25-21_59_40-Preferences| image:: images/2015-08-25-21_59_40-Preferences.png
-   :target: images/2015-08-25-21_59_40-Preferences.png
-.. |2015-08-25-22_02_55-FirstLab.gns3_ — GNS3| image:: images/2015-08-25-22_02_55-FirstLab.gns3_-—-GNS3.png
-   :target: images/2015-08-25-22_02_55-FirstLab.gns3_-—-GNS3.png
-.. |2015-08-25-22_05_43-Node configurator| image:: images/2015-08-25-22_05_43-Node-configurator.png
-   :target: images/2015-08-25-22_05_43-Node-configurator.png
-.. |2015-08-25-22_07_19-FirstLab.gns3_ — GNS3| image:: images/2015-08-25-22_07_19-FirstLab.gns3_-—-GNS3.png
-   :target: images/2015-08-25-22_07_19-FirstLab.gns3_-—-GNS3.png
-.. |2015-08-25-22_11_04-FirstLab.gns3_ — GNS3| image:: images/2015-08-25-22_11_04-FirstLab.gns3_-—-GNS3.png
-   :target: images/2015-08-25-22_11_04-FirstLab.gns3_-—-GNS3.png
-.. |2015-08-25-22_19_50-FirstLab.gns3 — GNS3| image:: images/2015-08-25-22_19_50-FirstLab.gns3-—-GNS3.png
-   :target: images/2015-08-25-22_19_50-FirstLab.gns3-—-GNS3.png

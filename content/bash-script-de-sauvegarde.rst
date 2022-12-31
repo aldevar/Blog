@@ -1,9 +1,8 @@
 Bash : Script de sauvegarde
 ###########################
 :date: 2014-07-24 11:14
-:author: alain
-:category: sysadmin
-:tags: bash, centos, cron, ftp, gz, Linux, pydio, sauvegarde, script, tar
+:author: Aldevar
+:category: Sysadmin
 :slug: bash-script-de-sauvegarde
 :status: published
 

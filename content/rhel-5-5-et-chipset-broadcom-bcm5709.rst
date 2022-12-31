@@ -1,9 +1,8 @@
 RHEL 5.5 et chipset broadcom BCM5709
 ####################################
 :date: 2010-06-28 19:36
-:author: alain
-:category: sysadmin
-:tags: broadcom, Linux, pilote, Red hat, réseau
+:author: Aldevar
+:category: Sysadmin
 :slug: rhel-5-5-et-chipset-broadcom-bcm5709
 :status: published
 
