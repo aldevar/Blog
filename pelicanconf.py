@@ -30,7 +30,7 @@ PLUGINS = ['m.htmlsanity', 'm.images']
 M_LINKS_NAVBAR1 = [('About', '/pages/about/', 'about', []),
                    ('Twitter', 'https://twitter.com/landvarx', '', []),
                    ('LinkedIn', 'https://www.linkedin.com/in/alain-devarieux/', '', []),
-                   ('Mastodon', 'https://noc.social/@Landvarx', '', [])]]
+                   ('Mastodon', 'https://noc.social/@Landvarx', '', [])]
 #PYGMENTS_STYLE = 'monokai'
 
 
