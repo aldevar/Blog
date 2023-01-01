@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'Aldevar'
-SITENAME = 'Aldevar - Le Blog'
+SITENAME = 'ADX - Le Blog'
 SITEURL = 'https://blog.devarieux.net'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
@@ -27,7 +27,7 @@ M_THEME_COLOR = '#22272e'
 M_SITE_LOGO_TEXT = 'ADX'
 PLUGIN_PATHS = ['themes/m.css/plugins']
 PLUGINS = ['m.htmlsanity', 'm.images']
-M_LINKS_NAVBAR1 = [('About', '/pages/about/', 'about', []),
+M_LINKS_NAVBAR1 = [('About', '/pages/about.html', 'about', []),
                    ('Twitter', 'https://twitter.com/landvarx', '', []),
                    ('LinkedIn', 'https://www.linkedin.com/in/alain-devarieux/', '', []),
                    ('Mastodon', 'https://noc.social/@Landvarx', '', [])]
