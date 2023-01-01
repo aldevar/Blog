@@ -31,7 +31,7 @@ Dans Ubuntu, c'est strongswan qui est installé par défaut, alors que Fedora ut
 Une fois cette installation effectuée, la configuration d'un VPN L2TP devient possible dans l'interface de gestion du réseau. Pour cela, il suffit de ce rendre dans les paramètres réseau et ajouter le VPN. Avant de valider, quelques modifications sont à faire pour ne pas conserver les paramètres par défaut.
 
 
-.. image:: /images/F33-MerakiVPN01.png
+.. image:: {static}/images/F33-MerakiVPN01.png
    :scale: 50 %
    :alt: Configuration réseau
 
@@ -40,7 +40,7 @@ Une fois cette installation effectuée, la configuration d'un VPN L2TP devient p
 En cliquant sur le + pour ajouter un VPN, on arrive sur cette nouvelle fenêtre. Celle ci permet de choisir le type de VPN à monter.
 
 
-.. image:: /images/F33-MerakiVPN02.png
+.. image:: {static}/images/F33-MerakiVPN02.png
    :alt: Choix du type de VPN
    :scale: 50 %
 
@@ -49,7 +49,7 @@ En cliquant sur le + pour ajouter un VPN, on arrive sur cette nouvelle fenêtre.
 On choisi le VPN L2TP puis on arrive sur la configuration du VPN
 
 
-.. image:: /images/F33-MerakiVPN03.png
+.. image:: {static}/images/F33-MerakiVPN03.png
    :alt: Configuration du VPN L2TP
    :scale: 50 %
 
@@ -58,7 +58,7 @@ On choisi le VPN L2TP puis on arrive sur la configuration du VPN
 Ici, on entre le nom du VPN, l'IP publique du MX Meraki ainsi que le nom d'utilisateur et le mot de passe. Une fois que c'est fait, on clique sur :code:`IPsec Settings`. 
 
 
-.. image:: /images/F33-MerakiVPN04.png
+.. image:: {static}/images/F33-MerakiVPN04.png
    :alt: Configuration IPsec
    :scale: 50 %
 
@@ -84,7 +84,7 @@ C'est ce pramètre qui n'est pas accepté par libreswan. Si vous utilisez libres
 On ne touche à rien d'autre, on valide cette fenêtre puis on clique sur :code:`PPP Settings`. Sur cette fenêtre, dans les paramètres d'authentification, on décoche tout sauf PAP et on laisse tout le reste par défaut.
 
 
-.. image:: /images/F33-MerakiVPN05.png
+.. image:: {static}/images/F33-MerakiVPN05.png
     :alt: Configuration PPP
     :scale: 50 %
 

@@ -20,6 +20,6 @@ Personnellement, j'ai mis beaucoup de temps à comprendre ce qui se passait. Je 
 Afin d'empêcher Umbrella d'intercepter les requêtes DNS pour un domaine spécifique, il suffit de le préciser dans la configuration.
 Cela se passe dans Wireless - Firewall & traffic shaping. En choisissant le bon SSID dans le menu déroulant en haut de la page, il possible de définir une liste de domaines dont les requêtes DNS ne seront pas routées vers Cisco Umbrella.
 
-.. image:: /images/2021-03-02-22_12_36-Meraki-Umbrella.png
+.. image:: {static}/images/2021-03-02-22_12_36-Meraki-Umbrella.png
    :scale: 50 %
    :alt: Whitelist Meraki Umbrella

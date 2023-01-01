@@ -14,14 +14,14 @@ Configuration du client VPN L2TP
 
 Dans les paramètres VPN de Windows 10, ajouter un nouveau VPN et y entrer les informations de connexion. Jusque là, rien de bien compliqué.
 
-.. image:: /images/Meraki_VPN_WIN10_Settings.png
+.. image:: {static}/images/Meraki_VPN_WIN10_Settings.png
    :scale: 50 %
    :alt: Windows 10 - Add VPN
 
 Ensuite, il faut se rendre dans les options d'adaptateurs (Change adapter options). Cela ouvre le Control Panel. Clique droit sur la connexion VPN concernée puis Propriété. Ici, dans l'onglet Securité, dans le second menu déroulant, il faut sélectionner "Require Encryption (Disconnect if server decline)".
 Puis, dans le partie Authentication, il faut cocher Allow these protocols puis 'Unencrypted password (PAP). Cette option n'envoie pas le mot de passe en clair sur le réseau. Celui ci transit par un canal chiffré entre le poste client et le MX Meraki. 
 
-.. image:: /images/Meraki_VPN_Win10_Properties01.png
+.. image:: {static}/images/Meraki_VPN_Win10_Properties01.png
    :scale: 50 %
    :alt: Windows 10 - VPN Properties
 

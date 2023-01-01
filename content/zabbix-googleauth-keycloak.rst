@@ -57,7 +57,7 @@ Configuration de Keycloak
 
 Dans l'interface de Keycloak, sur votre realm, créer un client ayant pour id :code:`zabbix` et pour protocol :code:`SAML`.
 
-.. image:: /images/Keycloak-Client-Zabbix.png
+.. image:: {static}/images/Keycloak-Client-Zabbix.png
     :alt: Creation du client Zabbix dans Keycloak
     :scale: 50 %
     :target: /images/Keycloak-Client-Zabbix.png
@@ -73,7 +73,7 @@ Une fois le client ajouté, il faut l'éditer pour terminer sa configuration. Vo
 - Le Name ID Format est code : ``email``
 
 
-.. image:: /images/Keycloak-Client-Zabbix-Configuration.png
+.. image:: {static}/images/Keycloak-Client-Zabbix-Configuration.png
     :alt: Configuration du client Zabbix dans Keycloak
     :scale: 50 %
     :target: /images/Keycloak-Client-Zabbix-Configuration.png
@@ -88,7 +88,7 @@ Créer ensuite le Mapper, dans l'onglet Mapper du client Zabbix.
 - Friendly Name : ``email``
 - SAML Attribute Name : ``email``
 
-.. image:: /images/Keycloak-Client-Zabbix-Mapper.png
+.. image:: {static}/images/Keycloak-Client-Zabbix-Mapper.png
     :alt: Mapper du client Zabbix dans Keycloak
     :scale: 50 %
     :target: /images/Keycloak-Client-Zabbix-Mapper.png
@@ -99,7 +99,7 @@ Sauvegarder cette configuration.
 
 Dernière étape de la configuration de Keycloak. Aller dans :code:`Client Scopes` et sélectionner :code:`role_list` et dans l'onglet Mapper, editer le mapper :code:`role list`. Activer :code:`Single Role Attribute`.
 
-.. image:: /images/Keycloak-Client-Scopes.png
+.. image:: {static}/images/Keycloak-Client-Scopes.png
     :alt: Client Scopes dans Keycloak
     :scale: 50 %
     :target: /images/Keycloak-Client-Scopes.png
@@ -127,7 +127,7 @@ Dans Administration > Users, créer un compte ayant pour Alias l'adresse email d
 
 Dans une nouvelle fenêtre en navigation privée, vous pouvez vous connecter sur Zabbix en cliquant d'abord sur **Sign in with Single Sign-On (SAML)** puis sur la fenêtre Keycloak qui s'affiche, un bouton Google permet de finaliser l'authentification.
 
-.. image:: /images/Zabbix-Auth-SAML.png
+.. image:: {static}/images/Zabbix-Auth-SAML.png
     :alt: Page d'Authentification Zabbix avec option SAML
     :scale: 50 %
     :target: /images/Zabbix-Auth-SAML.png
@@ -135,7 +135,7 @@ Dans une nouvelle fenêtre en navigation privée, vous pouvez vous connecter sur
 
 |
 
-.. image:: /images/Keycloak-Auth-Google.png
+.. image:: {static}/images/Keycloak-Auth-Google.png
     :alt: Page d'Authentification Keycloak avec option Google
     :scale: 50 %
     :target: /images/Keycloak-Auth-Google.png
