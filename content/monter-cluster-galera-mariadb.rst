@@ -34,7 +34,7 @@ respectivement mariadb01, mariadb02, mariadb03 et mariadb-proxy.
 
 Cet article s'attache à la mise en oeuvre du cluster en lui même. Un
 second article détaillera `le déploiement
-d'haproxy <http://blog.devarieux.net/2016/06/galera-load-balancing-failover-haproxy/>`__.
+d'haproxy <https://blog.devarieux.net/2016/06/galera-load-balancing-failover-haproxy.html>`__.
 
 Configuration du nœud mariadb01
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

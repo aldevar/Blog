@@ -11,7 +11,7 @@ Flash Back
 
 En Juin 2013, je me demandais comment j'allais `me passer des services
 de
-Google <http://blog.devarieux.net/2013/06/comment-vais-je-me-passer-des-services-de-google/>`__.
+Google <https://blog.devarieux.net/2013/06/comment-vais-je-me-passer-des-services-de-google.html>`__.
 
 Depuis, pas mal de choses ont évolué. J'ai un serveur sur lequel je
 stock mon agenda, mes contacts, mes emails avec Zimbra. J'utilise

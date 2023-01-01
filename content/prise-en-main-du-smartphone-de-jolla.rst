@@ -15,7 +15,6 @@ Une fois cette légère déception passée, j'ai observé l'emballage d'un
 peu plus prêt. La boite est sympa, sobre. Le logo Jolla est écrit en
 argenté et entouré de lignes de code
 
-[gallery columns="2" ids="417,418,422,424"]
 
 Le contenu est très basique : le smartphone, la batterie, un câble
 USB/micro USB et un bloc alim secteur sur lequel on peut branche le
@@ -38,7 +37,6 @@ Lorsqu'un menu est disponible, une lumière vous indique que vous pouvez
 tirer l'écran pour faire apparaitre ce menu. La sélection d'une entrée
 du menu se fait en tirant plus ou moins.
 
-[gallery ids="431,427,426"]
 
 Lorsqu'on ferme une application en swipant de droite à gauche (pour la
 fermer réellement, c'est de haut en bas), celle ci se 'range' sur la
@@ -47,7 +45,6 @@ multitâche. Les applications qui ne sont pas fermées continues de se
 mettre à jour et ne sont pas gelées comme cela peut être le cas sur les
 autres plateforme. Vous pouvez avoir jusqu'à 9 applications en parallèle
 
-[gallery ids="428,429,430"]
 
 Au premier démarrage, SailfishOS vous propose de connecter vos comptes
 Google, Facebook et Twitter. Il regroupera ensuite toutes les

@@ -133,7 +133,7 @@ Les bugs rencontrés actuellement sont les suivants :
 -  Le nombre de VM remontées est limité à 250. Sans doute une limitation
    coté Nutanix également.
 
-.. |2016-03-18 09_52_19-Nutanix Web Console| image:: images/2016-03-18-09_52_19-Nutanix-Web-Console.png
-.. |2016-03-18 09_52_56-Nutanix Web Console| image:: images/2016-03-18-09_52_56-Nutanix-Web-Console.png
-.. |2016-03-18 09_53_41-Nutanix Web Console| image:: images/2016-03-18-09_53_41-Nutanix-Web-Console.png
-.. |2016-03-18 11_06_42-Zabbix Appliance_ Configuration of hosts| image:: images/2016-03-18-11_06_42-Zabbix-Appliance-Configuration-of-hosts.png
+.. |2016-03-18 09_52_19-Nutanix Web Console| image:: {static}/images/2016-03-18-09_52_19-Nutanix-Web-Console.png
+.. |2016-03-18 09_52_56-Nutanix Web Console| image:: {static}/images/2016-03-18-09_52_56-Nutanix-Web-Console.png
+.. |2016-03-18 09_53_41-Nutanix Web Console| image:: {static}/images/2016-03-18-09_53_41-Nutanix-Web-Console.png
+.. |2016-03-18 11_06_42-Zabbix Appliance_ Configuration of hosts| {static}/image:: images/2016-03-18-11_06_42-Zabbix-Appliance-Configuration-of-hosts.png

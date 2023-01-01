@@ -32,6 +32,7 @@ Une fois cette installation effectuée, la configuration d'un VPN L2TP devient p
 
 
 .. image:: /images/F33-MerakiVPN01.png
+   :scale: 50 %
    :alt: Configuration réseau
 
 
@@ -41,6 +42,7 @@ En cliquant sur le + pour ajouter un VPN, on arrive sur cette nouvelle fenêtre.
 
 .. image:: /images/F33-MerakiVPN02.png
    :alt: Choix du type de VPN
+   :scale: 50 %
 
 
 
@@ -49,6 +51,7 @@ On choisi le VPN L2TP puis on arrive sur la configuration du VPN
 
 .. image:: /images/F33-MerakiVPN03.png
    :alt: Configuration du VPN L2TP
+   :scale: 50 %
 
 
 
@@ -57,7 +60,7 @@ Ici, on entre le nom du VPN, l'IP publique du MX Meraki ainsi que le nom d'utili
 
 .. image:: /images/F33-MerakiVPN04.png
    :alt: Configuration IPsec
-
+   :scale: 50 %
 
 
 On entre sa PSK puis on déplie les paramètres avancés. Là, il faut fixer les algorithmes de chiffrement des phases 1 et 2 IPsec. Pour chacune de ses phases, il faut entrer : 
@@ -83,6 +86,7 @@ On ne touche à rien d'autre, on valide cette fenêtre puis on clique sur :code:
 
 .. image:: /images/F33-MerakiVPN05.png
     :alt: Configuration PPP
+    :scale: 50 %
 
 Une fois ces paramètres validés, on peut tenter de se connecter au VPN. Cela doit fonctionner de suite. Si ça ne marche pas, il y a 2 moyens pour débuguer :
 

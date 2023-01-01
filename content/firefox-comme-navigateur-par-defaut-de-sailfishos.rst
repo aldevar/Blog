@@ -27,7 +27,6 @@ La première étape est d'installer le market Aptoide si ce n'est pas déjà
 fait. Pour cela, il faut se rendre dans la Boutique Jolla, puis dans
 'Place de marché' tout en bas et installer le market Aptoide Appstore
 
-[gallery size="medium" columns="2" link="file" ids="571,572"]
 
 Installation de Firefox
 -----------------------
@@ -37,7 +36,6 @@ l'application nouvellement installée et dans la zone de recherche, taper
 Firefox. Il faut ensuite trouver l'application **Firefox Browser for
 Android** et l'installer.
 
-[gallery link="file" columns="2" size="medium" ids="575,576,577,578"]
 
 Paramétrage d'ADB
 -----------------

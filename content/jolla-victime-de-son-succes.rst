@@ -7,7 +7,7 @@ Jolla victime de son succès
 :status: published
 
 Comme je le disais dans le dernier `article sur le
-Jolla <http://blog.devarieux.net/2015/02/prise-en-main-du-smartphone-de-jolla/>`__,
+Jolla <https://blog.devarieux.net/2015/02/prise-en-main-du-smartphone-de-jolla.html>`__,
 je devais recevoir avec mon colis 2 coques supplémentaires mais celles
 ci étaient absentes.
 

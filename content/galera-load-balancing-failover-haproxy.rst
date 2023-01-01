@@ -7,7 +7,7 @@ Galera Mariadb: Load balancing et Failover HAproxy
 :status: published
 
 Après avoir mis en place le `cluster Galera
-Mariadb <http://blog.devarieux.net/2016/06/monter-cluster-galera-mariadb/>`__,
+Mariadb <https://blog.devarieux.net/2016/06/monter-cluster-galera-mariadb.html>`__,
 nous avons besoin d'un point d'accès au cluster. Ce point d'accès peut
 être un proxy mysql ou tout autre serveur HA.
 

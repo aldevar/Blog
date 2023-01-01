@@ -59,6 +59,8 @@ Dans l'interface de Keycloak, sur votre realm, créer un client ayant pour id :c
 
 .. image:: /images/Keycloak-Client-Zabbix.png
     :alt: Creation du client Zabbix dans Keycloak
+    :scale: 50 %
+    :target: /images/Keycloak-Client-Zabbix.png
 
 |
 
@@ -73,6 +75,8 @@ Une fois le client ajouté, il faut l'éditer pour terminer sa configuration. Vo
 
 .. image:: /images/Keycloak-Client-Zabbix-Configuration.png
     :alt: Configuration du client Zabbix dans Keycloak
+    :scale: 50 %
+    :target: /images/Keycloak-Client-Zabbix-Configuration.png
 
 |
 
@@ -86,6 +90,8 @@ Créer ensuite le Mapper, dans l'onglet Mapper du client Zabbix.
 
 .. image:: /images/Keycloak-Client-Zabbix-Mapper.png
     :alt: Mapper du client Zabbix dans Keycloak
+    :scale: 50 %
+    :target: /images/Keycloak-Client-Zabbix-Mapper.png
 
 |
 
@@ -95,6 +101,8 @@ Dernière étape de la configuration de Keycloak. Aller dans :code:`Client Scope
 
 .. image:: /images/Keycloak-Client-Scopes.png
     :alt: Client Scopes dans Keycloak
+    :scale: 50 %
+    :target: /images/Keycloak-Client-Scopes.png
 
 
 |
@@ -121,11 +129,16 @@ Dans une nouvelle fenêtre en navigation privée, vous pouvez vous connecter sur
 
 .. image:: /images/Zabbix-Auth-SAML.png
     :alt: Page d'Authentification Zabbix avec option SAML
+    :scale: 50 %
+    :target: /images/Zabbix-Auth-SAML.png
+
 
 |
 
 .. image:: /images/Keycloak-Auth-Google.png
     :alt: Page d'Authentification Keycloak avec option Google
+    :scale: 50 %
+    :target: /images/Keycloak-Auth-Google.png
     
 |
 

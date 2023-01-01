@@ -7,7 +7,7 @@ Owncloud et fail2ban derrière un reverse proxy
 :status: published
 
 Dans le `dernier
-article </mise-en-oeuvre-de-fail2ban-pour-owncloudldap.html>`_,
+article <https://blog.devarieux.net/2013/11/mise-en-oeuvre-de-fail2ban-pour-owncloudldap.html>`_,
 j'expliquais comment mettre en place fail2ban sur son serveur pour
 protéger son instance Owncloud lorsqu'elle est connectée sur un serveur
 Ldap.
