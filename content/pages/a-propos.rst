@@ -9,13 +9,15 @@ Qui suis-je ?
 ****************
 
 - Mon nom : Alain Devarieux
-- Metier : Expert Systèmes et Réseau / Consultant SI
-- Employeur : `Sensing Vision <https://www.sensingvision.com/>`_
+- Metier : Consultant Cybersécurité / Expert Systèmes et Réseau / Consultant SI
+- Employeur : `Risk&Co <https://www.riskeco.com/>`_
 - Parcours : Ingénieur CNAM Spécialité informatique Parcours Informatique, réseaux, systèmes et multimédia (IRSM) 
 
-Vous pouvez me trouver sur twitter `@landvarx <https://twitter.com/landvarx>`_ ou me joindre par email alain at devarieux dot net.
+Je suis également enseignant au CNAM Bretagne, UE `RSX102 <https://www.cnam-bretagne.fr/formation/reseaux-serveurs-securite/technologies-pour-les-applications-client-serveur>`_
 
-N’hésitez pas également à vous abonner au `flux RSS <http://blog.devarieux.net/feed.atom.xml>`_
+Vous pouvez me trouver sur twitter `@landvarx <https://twitter.com/landvarx>`_ , Mastodon `@Landvarx@noc.social <https://noc.social/@Landvarx>`_ ou me joindre par email alain at devarieux dot net.
+
+N'hésitez pas également à vous abonner au `flux RSS <http://blog.devarieux.net/feed.atom.xml>`_
 
 Ce Blog
 ***********
@@ -26,4 +28,4 @@ Ce Blog
 Hébergement
 **************
 Ce blog est actuellement hébergé sur Github Pages.
-Construit avec `Pelican <https://blog.getpelican.com/>`_, thème `Alchemy <https://github.com/nairobilug/pelican-alchemy>`_ et CSS `Bootswatch Solar <https://bootswatch.com/solar/>`_
+Construit avec `Pelican <https://blog.getpelican.com/>`_, thème `m.css <https://mcss.mosra.cz/>`_ 

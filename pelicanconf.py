@@ -27,7 +27,10 @@ M_THEME_COLOR = '#22272e'
 M_SITE_LOGO_TEXT = 'ADX'
 PLUGIN_PATHS = ['themes/m.css/plugins']
 PLUGINS = ['m.htmlsanity', 'm.images']
-M_LINKS_NAVBAR1 = [('About', '/pages/about/', 'about', [])]
+M_LINKS_NAVBAR1 = [('About', '/pages/about/', 'about', []),
+                   ('Twitter', 'https://twitter.com/landvarx', '', []),
+                   ('LinkedIn', 'https://www.linkedin.com/in/alain-devarieux/', '', []),
+                   ('Mastodon', 'https://noc.social/@Landvarx', '', [])]]
 #PYGMENTS_STYLE = 'monokai'
 
 
